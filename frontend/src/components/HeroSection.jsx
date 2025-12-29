@@ -12,7 +12,7 @@ const HeroSection = () => {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
-          src="https://images.unsplash.com/photo-1558981806-ec527fa84c3d?q=80&w=2670&auto=format&fit=crop" 
+          src="images/HARLEY2.jpg" 
           className="w-full h-full object-cover opacity-60" 
           alt="Harley Davidson Hero"
         />
