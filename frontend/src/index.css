@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- FONT FACE DEFINITIONS --- */
+
+@font-face {
+  font-family: '1903Sans';
+  src: url('/fonts/1903Sans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '1903Sans';
+  src: url('/fonts/1903Sans-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '1903Condensed';
+  src: url('/fonts/1903SansCondensed-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '1903Condensed';
+  src: url('/fonts/1903SansCondensed-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- BASE STYLES --- */
+
+body {
+  @apply bg-hd-black text-white overflow-x-hidden;
+  font-family: '1903Sans', sans-serif;
+}
+
+/* --- CUSTOM UTILITIES (La magia visiva) --- */
+
+@layer utilities {
+  
+  /* 1. TEXT OUTLINE (Effetto testo "fantasma") */
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    color: transparent;
+  }
+  .text-outline-orange {
+    -webkit-text-stroke: 1px #FF6600;
+    color: transparent;
+  }
+
+  /* 2. CLIP PATHS (Le forme aggressive) */
+  
+  /* Taglio diagonale in basso a destra (per le Hero Section) */
+  .clip-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+  
+  /* Taglio diagonale inverso (per le sezioni chiare) */
+  .clip-diagonal-reverse {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  /* Bottone inclinato (Parallelogramma) */
+  .clip-slant {
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+  }
+  
+  /* Card con angolo tagliato (stile Cyberpunk/Industrial) */
+  .clip-corner {
+    clip-path: polygon(
+      0 0, 
+      100% 0, 
+      100% calc(100% - 20px), 
+      calc(100% - 20px) 100%, 
+      0 100%
+    );
+  }
+
+  /* 3. EFFETTI VETRO & GRANA */
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+}
+
+/* --- COMPONENTS --- */
+
+@layer components {
+  /* Bottone standard Harley */
+  .btn-primary {
+    @apply relative overflow-hidden bg-hd-orange text-white font-condensed font-bold uppercase tracking-wider px-8 py-3 transition-all duration-300 hover:bg-white hover:text-hd-black;
+  }
+  
+  /* Bottone Outline */
+  .btn-outline {
+    @apply border-2 border-white/30 text-white font-condensed font-bold uppercase tracking-wider px-8 py-3 transition-all duration-300 hover:border-hd-orange hover:text-hd-orange;
+  }
+}

@@ -1,0 +1,19 @@
+wetransfer_harley-brand-guidelines_2025-12-23_1325
+# --- Visual Studio & .NET ---
+.vs/
+bin/
+obj/
+*.user
+*.suo
+[Dd]ebug/
+[Rr]elease/
+*.dll
+*.pdb
+*.cache
+
+# --- Node.js / Frontend ---
+node_modules/
+dist/
+build/
+.env
+.DS_Store
