@@ -1,25 +1,36 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Inventory from './pages/Inventory';
+import Services from './pages/Services';
+import Shop from './pages/Shop';
+import Events from './pages/Events';
+import Contact from './pages/Contact';
+import AnimatedPage from './components/AnimatedPage';
 
 function App() {
+  const location = useLocation();
+
   return (
-    <BrowserRouter>
-      <div className="flex flex-col min-h-screen bg-hd-dark font-sans text-white">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/inventory" element={<Inventory />} />
-            {/* Aggiungerai qui altre rotte: /bikes/:vid, /contact, ecc */}
+    <div className="flex flex-col min-h-screen bg-hd-dark font-sans text-white overflow-hidden">
+      <Navbar />
+      <main className="flex-grow">
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<AnimatedPage><Home /></AnimatedPage>} />
+            <Route path="/inventory" element={<AnimatedPage><Inventory /></AnimatedPage>} />
+            <Route path="/services" element={<AnimatedPage><Services /></AnimatedPage>} />
+            <Route path="/shop" element={<AnimatedPage><Shop /></AnimatedPage>} />
+            <Route path="/events" element={<AnimatedPage><Events /></AnimatedPage>} />
+            <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
           </Routes>
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+        </AnimatePresence>
+      </main>
+      <Footer />
+    </div>
   );
 }
 

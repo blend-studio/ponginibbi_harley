@@ -1,78 +1,187 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { getBikes } from '../services/api';
 import BikeCard from '../components/ui/BikeCard';
 import SectionTitle from '../components/ui/SectionTitle';
+import { Filter, X } from 'lucide-react';
 
 const Inventory = () => {
   const [bikes, setBikes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showMobileFilters, setShowMobileFilters] = useState(false);
 
-  // Mock data se l'API non risponde ancora
+  // Enhanced Mock data
   const mockBikes = [
-    { vid: '1', model: 'SPORTSTER S', version: 'RH1250S', price: 17900, mileage: 0, registrationDate: '2024-01-01', image: 'https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2024/2024-sportster-s/2024-sportster-s-f85/360/2024-sportster-s-f85-motorcycle-01.jpg' },
-    { vid: '2', model: 'LOW RIDER ST', version: 'FXLRST', price: 24500, mileage: 1500, registrationDate: '2023-05-01', image: 'https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2024/2024-low-rider-st/2024-low-rider-st-f36/360/2024-low-rider-st-f36-motorcycle-01.jpg' },
+    { 
+      vid: '1', 
+      model: 'CVO ROAD GLIDE ST', 
+      version: 'FLTRXSTSE', 
+      price: 50600, 
+      mileage: 0, 
+      registrationDate: '2025-01-01', 
+      status: 'NEW',
+      image: 'https://images.unsplash.com/photo-1558980664-2506fca6bfc2?q=80&w=2670&auto=format&fit=crop' 
+    },
+    { 
+      vid: '2', 
+      model: 'STREET GLIDE', 
+      version: 'FLHX', 
+      price: 32900, 
+      mileage: 500, 
+      registrationDate: '2024-06-01', 
+      status: 'DEMO',
+      image: 'https://images.unsplash.com/photo-1622185135505-2d795043dfeb?q=80&w=2670&auto=format&fit=crop' 
+    },
+    { 
+      vid: '3', 
+      model: 'ROAD KING SPECIAL', 
+      version: 'FLHRXS', 
+      price: 29800, 
+      mileage: 0, 
+      registrationDate: '2025-02-15', 
+      status: 'NEW',
+      image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop' 
+    },
+    { 
+      vid: '4', 
+      model: 'PAN AMERICA 1250', 
+      version: 'SPECIAL', 
+      price: 19900, 
+      mileage: 12000, 
+      registrationDate: '2023-01-10', 
+      status: 'USED',
+      image: 'https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?q=80&w=2574&auto=format&fit=crop' 
+    },
+     { 
+      vid: '5', 
+      model: 'SPORTSTER S', 
+      version: 'RH1250S', 
+      price: 18900, 
+      mileage: 0, 
+      registrationDate: '2024-11-01', 
+      status: 'NEW',
+      image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee53?q=80&w=2670&auto=format&fit=crop' 
+    },
+    { 
+      vid: '6', 
+      model: 'STREET GLIDE ULTRA', 
+      version: 'LIMITED', 
+      price: 34900, 
+      mileage: 15000, 
+      registrationDate: '2022-05-20', 
+      status: 'USED',
+      image: 'https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=2670&auto=format&fit=crop' 
+    },
   ];
 
   useEffect(() => {
-    // Sostituire con chiamata API reale
-    // getBikes().then(data => setBikes(data));
+    // Simulazione caricamento API
     setTimeout(() => {
         setBikes(mockBikes);
         setLoading(false);
-    }, 1000);
+    }, 800);
   }, []);
 
   return (
-    <div className="bg-hd-dark min-h-screen py-10">
+    <div className="bg-hd-dark min-h-screen pt-36 pb-10">
       <div className="max-w-7xl mx-auto px-4">
         
-        <SectionTitle title="Il Nostro Stock" subtitle="Pronta Consegna" />
+        <div className="flex justify-between items-end mb-12">
+            <SectionTitle title="Il Nostro Stock" subtitle="Pronta Consegna" />
+            <button 
+                className="lg:hidden flex items-center gap-2 text-white border border-white/30 px-4 py-2 uppercase font-bold"
+                onClick={() => setShowMobileFilters(!showMobileFilters)}
+            >
+                <Filter size={16} /> Filtri
+            </button>
+        </div>
 
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-8 relative">
             
-            {/* Sidebar Filtri */}
-            <div className="w-full lg:w-1/4">
-                <div className="bg-hd-gray p-6 sticky top-24">
-                    <h3 className="font-condensed text-2xl font-bold mb-6 text-white border-b border-gray-700 pb-2">FILTRA</h3>
+            {/* Sidebar Filtri - Desktop Sticky / Mobile Modal */}
+            <aside className={`
+                fixed inset-0 z-50 bg-black/95 backdrop-blur-xl p-6 lg:static lg:bg-transparent lg:p-0 lg:w-1/4 lg:block lg:backdrop-blur-none
+                ${showMobileFilters ? 'block' : 'hidden'}
+            `}>
+                <div className="flex justify-between items-center lg:hidden mb-8">
+                    <h3 className="text-2xl font-condensed font-bold text-white uppercase">Filtri</h3>
+                    <button onClick={() => setShowMobileFilters(false)} className="text-white"><X size={32} /></button>
+                </div>
+
+                <div className="bg-white/5 border border-white/10 p-6 sticky top-24 backdrop-blur-sm">
+                    <h3 className="font-condensed text-2xl font-bold mb-6 text-white border-b border-gray-700 pb-2 hidden lg:block">FILTRA</h3>
                     
                     <div className="mb-6">
-                        <label className="block text-gray-400 text-sm mb-2 font-bold uppercase">Famiglia</label>
-                        <select className="w-full bg-hd-dark text-white p-2 border border-gray-700 focus:border-hd-orange outline-none">
-                            <option>Tutte</option>
+                        <label className="block text-gray-400 text-sm mb-2 font-bold uppercase tracking-wider">Famiglia</label>
+                        <select className="w-full bg-black/50 text-white p-3 border border-gray-700 focus:border-hd-orange outline-none transition-colors appearance-none">
+                            <option>Tutte le famiglie</option>
                             <option>Sport</option>
                             <option>Cruiser</option>
                             <option>Grand American Touring</option>
+                            <option>Adventure Touring</option>
                         </select>
                     </div>
 
                     <div className="mb-6">
-                        <label className="block text-gray-400 text-sm mb-2 font-bold uppercase">Stato</label>
-                        <div className="flex gap-4">
-                            <label className="flex items-center text-white text-sm">
-                                <input type="checkbox" className="mr-2 accent-hd-orange" /> Nuovo
+                        <label className="block text-gray-400 text-sm mb-2 font-bold uppercase tracking-wider">Stato</label>
+                        <div className="flex flex-col gap-3">
+                            <label className="flex items-center text-white text-sm cursor-pointer group">
+                                <input type="checkbox" className="mr-3 w-4 h-4 accent-hd-orange" /> 
+                                <span className="group-hover:text-hd-orange transition-colors">Nuovo</span>
                             </label>
-                            <label className="flex items-center text-white text-sm">
-                                <input type="checkbox" className="mr-2 accent-hd-orange" /> Usato
+                            <label className="flex items-center text-white text-sm cursor-pointer group">
+                                <input type="checkbox" className="mr-3 w-4 h-4 accent-hd-orange" /> 
+                                <span className="group-hover:text-hd-orange transition-colors">Usato</span>
+                            </label>
+                            <label className="flex items-center text-white text-sm cursor-pointer group">
+                                <input type="checkbox" className="mr-3 w-4 h-4 accent-hd-orange" /> 
+                                <span className="group-hover:text-hd-orange transition-colors">Demo</span>
                             </label>
                         </div>
                     </div>
 
-                    <button className="w-full bg-white text-hd-black font-bold uppercase py-2 hover:bg-hd-orange hover:text-white transition-colors">
+                    <div className="mb-8">
+                        <label className="block text-gray-400 text-sm mb-2 font-bold uppercase tracking-wider">Prezzo Max</label>
+                        <input type="range" min="10000" max="50000" className="w-full accent-hd-orange" />
+                        <div className="flex justify-between text-xs text-gray-500 mt-2 font-mono">
+                            <span>€ 10k</span>
+                            <span>€ 50k</span>
+                        </div>
+                    </div>
+
+                    <button className="w-full bg-white text-hd-black font-condensed font-bold uppercase py-3 hover:bg-hd-orange hover:text-white transition-all duration-300 clip-slant">
                         Applica Filtri
                     </button>
                 </div>
-            </div>
+            </aside>
 
             {/* Grid Risultati */}
             <div className="w-full lg:w-3/4">
                 {loading ? (
-                    <div className="text-white text-center py-20">Caricamento motori...</div>
-                ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {bikes.map(bike => (
-                            <BikeCard key={bike.vid} bike={bike} />
-                        ))}
+                    <div className="flex justify-center items-center h-64">
+                         <div className="w-16 h-16 border-4 border-hd-orange border-t-transparent rounded-full animate-spin"></div>
                     </div>
+                ) : (
+                    <motion.div 
+                        initial="hidden"
+                        animate="visible"
+                        variants={{
+                            visible: { transition: { staggerChildren: 0.1 } }
+                        }}
+                        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                    >
+                        {bikes.map(bike => (
+                            <motion.div 
+                                key={bike.vid} 
+                                variants={{
+                                    hidden: { opacity: 0, y: 30 },
+                                    visible: { opacity: 1, y: 0 }
+                                }}
+                            >
+                                <BikeCard bike={bike} />
+                            </motion.div>
+                        ))}
+                    </motion.div>
                 )}
             </div>
 

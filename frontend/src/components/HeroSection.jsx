@@ -1,16 +1,20 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black clip-diagonal">
       
-      {/* VIDEO BACKGROUND (Simulato con immagine per ora) */}
-      <div className="absolute inset-0">
-        <img 
-          src="https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2024/2024-road-glide/2024-road-glide-f57/360/2024-road-glide-f57-motorcycle-01.jpg?impolicy=myresize&rw=1600" 
-          className="w-full h-full object-cover opacity-60 scale-105 animate-pulse-slow" 
-          alt="Hero"
+      {/* BACKGROUND ANIMATO */}
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.img 
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 10, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+          src="https://images.unsplash.com/photo-1558981806-ec527fa84c3d?q=80&w=2670&auto=format&fit=crop" 
+          className="w-full h-full object-cover opacity-60" 
+          alt="Harley Davidson Hero"
         />
         {/* Gradiente drammatico */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
@@ -20,36 +24,70 @@ const HeroSection = () => {
       {/* CONTENT */}
       <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-20 max-w-7xl mx-auto">
         
-        <div className="mb-4 flex items-center gap-4 overflow-hidden">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-4 flex items-center gap-4 overflow-hidden"
+        >
             <div className="h-[2px] w-12 bg-hd-orange"></div>
-            <span className="text-hd-orange font-bold tracking-[0.4em] uppercase text-sm md:text-base animate-slide-in">
+            <span className="text-hd-orange font-bold tracking-[0.4em] uppercase text-sm md:text-base">
               Official Dealer Piacenza
             </span>
-        </div>
+        </motion.div>
 
-        <h1 className="font-condensed font-bold text-7xl md:text-[10rem] leading-[0.85] text-white uppercase mix-blend-overlay opacity-90">
-          American<br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600">Muscle.</span>
+        <h1 className="font-condensed font-bold text-7xl md:text-[10rem] leading-[0.85] text-white uppercase mix-blend-overlay opacity-90 overflow-hidden">
+          <motion.span 
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="block"
+          >
+            La Nuova
+          </motion.span>
+          <motion.span 
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600"
+          >
+            Gamma 2026
+          </motion.span>
         </h1>
 
-        <p className="mt-8 max-w-lg text-gray-300 font-sans text-lg border-l-4 border-hd-orange pl-6">
-          La potenza non chiede permesso. Scopri la nuova gamma 2025 e l'usato certificato nel nuovo store Ponginibbi.
-        </p>
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="mt-8 max-w-lg text-gray-300 font-sans text-lg border-l-4 border-hd-orange pl-6"
+        >
+          La strada da percorrere inizia qui. Scopri i nuovi modelli e l'usato certificato nel nuovo store Ponginibbi.
+        </motion.p>
 
-        <div className="mt-12 flex flex-wrap gap-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+          className="mt-12 flex flex-wrap gap-6"
+        >
             <button className="relative group overflow-hidden bg-hd-orange px-8 py-4 font-condensed font-bold text-xl uppercase tracking-wider text-white clip-slant hover:bg-white hover:text-hd-black transition-all duration-300">
                 <span className="relative z-10">Esplora Stock</span>
+                <div className="absolute inset-0 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></div>
             </button>
-            <button className="px-8 py-4 border border-white/30 text-white font-condensed font-bold text-xl uppercase tracking-wider hover:border-hd-orange hover:text-hd-orange transition-all duration-300">
+            <button className="px-8 py-4 border border-white/30 text-white font-condensed font-bold text-xl uppercase tracking-wider hover:border-hd-orange hover:text-hd-orange transition-all duration-300 backdrop-blur-sm">
                 Prenota Test Ride
             </button>
-        </div>
+        </motion.div>
       </div>
 
       {/* SCROLL INDICATOR */}
-      <div className="absolute bottom-20 right-10 md:right-20 animate-bounce text-white/50">
+      <motion.div 
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+        className="absolute bottom-10 right-10 md:right-20 text-white/50"
+      >
         <ChevronDown size={40} />
-      </div>
+      </motion.div>
     </div>
   );
 };
