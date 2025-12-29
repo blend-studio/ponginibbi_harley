@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Inventory from './pages/Inventory';
+import BikeDetail from './pages/BikeDetail';
+import Accessories from './pages/Accessories';
 import Services from './pages/Services';
 import Shop from './pages/Shop';
 import Events from './pages/Events';
@@ -25,7 +27,9 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<AnimatedPage><Home /></AnimatedPage>} />
             <Route path="/inventory" element={<AnimatedPage><Inventory /></AnimatedPage>} />
+            <Route path="/inventory/:vid" element={<AnimatedPage><BikeDetail /></AnimatedPage>} />
             <Route path="/services" element={<AnimatedPage><Services /></AnimatedPage>} />
+            <Route path="/accessories" element={<AnimatedPage><Accessories /></AnimatedPage>} />
             <Route path="/services/maintenance" element={<Maintenance />} />
             <Route path="/services/customization" element={<Customization />} />
             <Route path="/services/winter-storage" element={<WinterStorage />} />

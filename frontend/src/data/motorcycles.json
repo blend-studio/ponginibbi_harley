@@ -1,0 +1,102 @@
+[
+  {
+    "vid": "1",
+    "model": "STREET GLIDE",
+    "version": "FLHX",
+    "price": 24999,
+    "mileage": 0,
+    "registrationDate": "2025-01-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/3pFJxxzQ4vGVx1GfkUni0W/9ce3e88b0dfa1b3d08941f61022cb6b6/2025-cvo-road-glide-st-m34b-motorcycle?impolicy=myresize&rw=640"
+  },
+  {
+    "vid": "2",
+    "model": "ROAD GLIDE",
+    "version": "FLTRX",
+    "price": 27999,
+    "mileage": 0,
+    "registrationDate": "2025-01-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/xVcwhFJcivRzl8zNDb9fl/75e7205b87276d47c8725b19515d858b/2026-street-glide-m75b-motorcycle?impolicy=myresize&rw=640"
+  },
+  {
+    "vid": "3",
+    "model": "STREET BOB",
+    "version": "FXBBS",
+    "price": 14999,
+    "mileage": 0,
+    "registrationDate": "2024-06-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/3wVGdXdzgmmTiqABYF7RjD/9a871b7db7d43d899677537806099fd9/2026-road-glide-m79b-motorcycle?impolicy=myresize&rw=640"
+  },
+  {
+    "vid": "4",
+    "model": "LOW RIDER S",
+    "version": "FXLRST",
+    "price": 19999,
+    "mileage": 0,
+    "registrationDate": "2024-01-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/31mu4AQ6k8pZaiUbluRvRY/66171860ab85963c8a1a3d44766f3bbc/2025-road-king-special-m12b-motorcycle?impolicy=myresize&rw=640"
+  },
+  {
+    "vid": "5",
+    "model": "FAT BOY",
+    "version": "FXSB",
+    "price": 22599,
+    "mileage": 0,
+    "registrationDate": "2024-03-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/6wRCus2MS3A7zvM0xN9CoS/51bf54f7f29fb122565442ce4e92a6fc/2025-street-glide-m07b-motorcycle?impolicy=myresize&rw=640"
+  },
+  {
+    "vid": "6",
+    "model": "BREAKOUT",
+    "version": "FXBR",
+    "price": 22999,
+    "mileage": 0,
+    "registrationDate": "2024-02-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/3o1tbtEKDwgiNomW2FzAaU/15cc77ea145d6357b4f3c2cb4671c5a2/2025-road-glide-m04b-motorcycle?impolicy=myresize&rw=640"
+  },
+  {
+    "vid": "7",
+    "model": "PAN AMERICA 1250 SPECIAL",
+    "version": "ADV",
+    "price": 19999,
+    "mileage": 0,
+    "registrationDate": "2024-05-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/rg3PlXSFu9xaPFJHfJA5j/d8ecd1cb3f3177e2239a75e6cfab34d8/2026-street-bob-m44-motorcycle?impolicy=myresize&rw=640"
+  },
+  {
+    "vid": "8",
+    "model": "NIGHTSTER",
+    "version": "RH1250",
+    "price": 9999,
+    "mileage": 0,
+    "registrationDate": "2024-01-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/uF3H4KFgVjAwkFUEDNAfS/1d65d6e5657576bd9980657c60ba4afb/2026-low-rider-s-m75b-motorcycle?impolicy=myresize&rw=640"
+  },
+  {
+    "vid": "9",
+    "model": "SPORTSTER S",
+    "version": "RH1250S",
+    "price": 15999,
+    "mileage": 0,
+    "registrationDate": "2024-11-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/2ZUXz7safHKvRTUZzP0I4L/453f46505e3c1ff424f083d0578a0caf/2026-pan-america-1250-special-m72b-motorcycle?impolicy=myresize&rw=640"
+  },
+  {
+    "vid": "10",
+    "model": "HERITAGE CLASSIC",
+    "version": "FLHC",
+    "price": 19999,
+    "mileage": 0,
+    "registrationDate": "2024-07-01",
+    "status": "NEW",
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/4Sd6M2CrizcZMwmnVhQCWl/fd79a092acedd707410a15b97e170465/2026-pan-america-1250-st-m75b-motorcycle?impolicy=myresize&rw=640"
+  }
+]

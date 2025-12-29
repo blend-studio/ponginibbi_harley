@@ -4,82 +4,21 @@ import { getBikes } from '../services/api';
 import BikeCard from '../components/ui/BikeCard';
 import SectionTitle from '../components/ui/SectionTitle';
 import { Filter, X } from 'lucide-react';
+import catalog from '../data/motorcycles.json';
 
 const Inventory = () => {
   const [bikes, setBikes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
 
-  // Enhanced Mock data
-  const mockBikes = [
-    { 
-      vid: '1', 
-      model: 'CVO ROAD GLIDE ST', 
-      version: 'FLTRXSTSE', 
-      price: 50600, 
-      mileage: 0, 
-      registrationDate: '2025-01-01', 
-      status: 'NEW',
-      image: 'https://images.unsplash.com/photo-1558980664-2506fca6bfc2?q=80&w=2670&auto=format&fit=crop' 
-    },
-    { 
-      vid: '2', 
-      model: 'STREET GLIDE', 
-      version: 'FLHX', 
-      price: 32900, 
-      mileage: 500, 
-      registrationDate: '2024-06-01', 
-      status: 'DEMO',
-      image: 'https://images.unsplash.com/photo-1622185135505-2d795043dfeb?q=80&w=2670&auto=format&fit=crop' 
-    },
-    { 
-      vid: '3', 
-      model: 'ROAD KING SPECIAL', 
-      version: 'FLHRXS', 
-      price: 29800, 
-      mileage: 0, 
-      registrationDate: '2025-02-15', 
-      status: 'NEW',
-      image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop' 
-    },
-    { 
-      vid: '4', 
-      model: 'PAN AMERICA 1250', 
-      version: 'SPECIAL', 
-      price: 19900, 
-      mileage: 12000, 
-      registrationDate: '2023-01-10', 
-      status: 'USED',
-      image: 'https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?q=80&w=2574&auto=format&fit=crop' 
-    },
-     { 
-      vid: '5', 
-      model: 'SPORTSTER S', 
-      version: 'RH1250S', 
-      price: 18900, 
-      mileage: 0, 
-      registrationDate: '2024-11-01', 
-      status: 'NEW',
-      image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee53?q=80&w=2670&auto=format&fit=crop' 
-    },
-    { 
-      vid: '6', 
-      model: 'STREET GLIDE ULTRA', 
-      version: 'LIMITED', 
-      price: 34900, 
-      mileage: 15000, 
-      registrationDate: '2022-05-20', 
-      status: 'USED',
-      image: 'https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=2670&auto=format&fit=crop' 
-    },
-  ];
+    // Catalog loaded from frontend/src/data/motorcycles.json
 
   useEffect(() => {
-    // Simulazione caricamento API
+    // Simulazione caricamento API da catalogo locale
     setTimeout(() => {
-        setBikes(mockBikes);
+        setBikes(catalog);
         setLoading(false);
-    }, 800);
+    }, 600);
   }, []);
 
   return (

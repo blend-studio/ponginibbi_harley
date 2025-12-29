@@ -25,7 +25,10 @@ const Navbar = () => {
                 <span className="flex items-center gap-1"><Phone size={12} /> 0523 123456</span>
                 <span className="flex items-center gap-1"><MapPin size={12} /> Via Emilia Pavese, Piacenza</span>
             </div>
-            <div>PONGINIBBI GROUP</div>
+              <div className="flex items-center gap-4">
+                <Link to="/" className="text-gray-300 hover:text-white uppercase font-bold">Home</Link>
+                <div className="hidden sm:block">PONGINIBBI GROUP</div>
+              </div>
          </div>
       </div>
 
@@ -50,6 +53,7 @@ const Navbar = () => {
                 {[
                   { name: 'MOTO', path: '/inventory' },
                   { name: 'ASSISTENZA', path: '/services' },
+                  { name: 'ACCESSORI', path: '/accessories' },
                   { name: 'NEGOZIO', path: '/shop' },
                   { name: 'EVENTI', path: '/events' },
                   { name: 'CHI SIAMO', path: '/contact' }
@@ -103,6 +107,7 @@ const Navbar = () => {
               <Link to="/" className="font-condensed text-white text-4xl font-bold hover:text-hd-orange transition-colors">HOME</Link>
               <Link to="/inventory" className="font-condensed text-white text-4xl font-bold hover:text-hd-orange transition-colors">MOTO</Link>
               <Link to="/services" className="font-condensed text-white text-4xl font-bold hover:text-hd-orange transition-colors">ASSISTENZA</Link>
+              <Link to="/accessories" className="font-condensed text-white text-4xl font-bold hover:text-hd-orange transition-colors">ACCESSORI</Link>
               <Link to="/shop" className="font-condensed text-white text-4xl font-bold hover:text-hd-orange transition-colors">NEGOZIO</Link>
               <Link to="/events" className="font-condensed text-white text-4xl font-bold hover:text-hd-orange transition-colors">EVENTI</Link>
               <Link to="/contact" className="font-condensed text-white text-4xl font-bold hover:text-hd-orange transition-colors">CHI SIAMO</Link>

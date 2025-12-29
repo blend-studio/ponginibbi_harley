@@ -1,0 +1,23 @@
+[
+  {
+    "id": "a1",
+    "name": "Casco Jet Classic",
+    "price": 189,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/placeholder/helmet.jpg",
+    "description": "Casco omologato DOT con finiture in pelle e visiera corta."
+  },
+  {
+    "id": "a2",
+    "name": "Borsa serbatoio 12L",
+    "price": 129,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/placeholder/tank-bag.jpg",
+    "description": "Borsa resistente all'acqua, facile da fissare al serbatoio."
+  },
+  {
+    "id": "a3",
+    "name": "Manopole riscaldate",
+    "price": 219,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/placeholder/grips.jpg",
+    "description": "Set di manopole riscaldate con controller integrato."
+  }
+]

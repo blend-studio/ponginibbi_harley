@@ -25,6 +25,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400 text-sm">
                 <li><a href="/inventory" className="hover:text-white transition-colors">Moto Nuove</a></li>
                 <li><a href="/inventory" className="hover:text-white transition-colors">Usato Garantito</a></li>
+              <li><a href="/accessories" className="hover:text-white transition-colors">Accessori</a></li>
                 <li><a href="/services" className="hover:text-white transition-colors">Assistenza & Service</a></li>
                 <li><a href="/shop" className="hover:text-white transition-colors">Parts & Accessories</a></li>
                 <li><a href="/shop" className="hover:text-white transition-colors">Abbigliamento</a></li>
