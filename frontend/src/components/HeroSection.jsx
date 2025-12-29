@@ -8,14 +8,7 @@ const HeroSection = () => {
       
       {/* BACKGROUND ANIMATO */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.img 
-          initial={{ scale: 1.1 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 10, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
-          src="images/HARLEY2.jpg" 
-          className="w-full h-full object-cover opacity-60" 
-          alt="Harley Davidson Hero"
-        />
+        <img src="/images/HARLEY2.jpg" alt="Background" className="w-full h-full object-cover opacity-60" />
         {/* Gradiente drammatico */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-transparent"></div>

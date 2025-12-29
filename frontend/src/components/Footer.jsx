@@ -61,7 +61,7 @@ const Footer = () => {
         <div>© 2025 Ponginibbi Group - P.IVA 12345678901 - All Rights Reserved.</div>
         <div className="flex items-center gap-4">
            <span>Official Dealer</span>
-           <img src="/images/harley/harley-davidson-1.png" alt="Harley-Davidson" className="h-8 md:h-10 w-auto opacity-80" />
+           <img src="/images/harley/2021 H-D_BAR AND SHIELD_CMYK WHITE.png" alt="Harley-Davidson" className="h-10 md:h-12 w-auto opacity-90" />
         </div>
       </div>
     </footer>
