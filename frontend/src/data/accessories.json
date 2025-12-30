@@ -1,23 +1,69 @@
 [
   {
     "id": "a1",
-    "name": "Casco Jet Classic",
-    "price": 189,
-    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/placeholder/helmet.jpg",
-    "description": "Casco omologato DOT con finiture in pelle e visiera corta."
+    "name": "Poggiapiedi Touring",
+    "price": 129,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/6rXvB8gX26VfVebmVqkkcj/ac4a7dd58517fb5e82e3092fe8fa8a44/76388-08_TT?impolicy=myresize&rw=320",
+    "description": "Poggiapiedi aftermarket per maggiore comfort durante i lunghi viaggi."
   },
   {
     "id": "a2",
-    "name": "Borsa serbatoio 12L",
-    "price": 129,
-    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/placeholder/tank-bag.jpg",
-    "description": "Borsa resistente all'acqua, facile da fissare al serbatoio."
+    "name": "Portaoggetti laterale",
+    "price": 89,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/6nohbTPxiF26eGuCy6ZmYg/bcf4212123492f78552da2c67d5a6a1f/90201312_TT?impolicy=myresize&rw=320",
+    "description": "Pratica borsa laterale per piccoli oggetti e documenti."
   },
   {
     "id": "a3",
-    "name": "Manopole riscaldate",
-    "price": 219,
-    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/placeholder/grips.jpg",
-    "description": "Set di manopole riscaldate con controller integrato."
+    "name": "Sella Touring Comfort",
+    "price": 329,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/6zAqHJamRzhxB12TchVaFx/e6c447e946d3ded39cbf488ff939b4e4/52000749_OB?impolicy=myresize&rw=160",
+    "description": "Sella anteriore ad alta ergonomia, ideale per lunghi tragitti.",
+    "source": "https://www.harley-davidson.com/it/it/shop/c/motorcycle-seats-and-backrests"
+  },
+  {
+    "id": "a4",
+    "name": "Supporto posteriore",
+    "price": 159,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/30qQqjczEjA4QkLuMEdvUF/008745b7dc2adc3e6b9e64334b83646f/54000193_TT?impolicy=myresize&rw=160",
+    "description": "Supporto schienale per passeggero, facilmente rimovibile."
+  },
+  {
+    "id": "a5",
+    "name": "Kit viti cromate",
+    "price": 49,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/2EBW7XP9UNjsPr6R8RzvyO/a9b4e32ce82b24c173d3bf29c6cc343a/43163-08A_TT?impolicy=myresize&rw=320",
+    "description": "Set di viti e copriviti cromati per rifinire la tua moto."
+  },
+  {
+    "id": "a6",
+    "name": "Tappetini serbatoio",
+    "price": 39,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/5d1btQJVgO1oQVh06xIpZc/98560a82da608149f7d5efb98eb52f24/94624-97B_TT?impolicy=myresize&rw=160",
+    "description": "Tappetini protettivi per serbatoio, antiscivolo e resistenti."
+  },
+  {
+    "id": "a7",
+    "name": "Novità - Arrivi",
+    "price": 0,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/uPShtedkqMzkFU1yNQA04/7a9552fcbbbe928f2851a13235be820b/p-clp-new-arrivals-mc?impolicy=myresize&rw=960",
+    "description": "Sezione Novità: scopri gli ultimi accessori arrivati in negozio.",
+    "tag": "collection"
+  },
+  {
+    "id": "a8",
+    "name": "Rider Favs",
+    "price": 0,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/3XFbn9W3LKtIUuICcB59dJ/6fb1167dbe3b46fd6826123ef27ef524/p-clp-rider-favs-mc?impolicy=myresize&rw=960",
+    "description": "Gli accessori preferiti dai rider: idee regalo e best-seller.",
+    "tag": "collection"
+  },
+  {
+    "id": "a9",
+    "name": "Borse EMEA",
+    "price": 0,
+    "image": "https://www.harley-davidson.com/ctfasset/5vy1mse9fkav/5MNW6UoCXthMdeQ9NIVVr4/7391bf6c1529fc7b28bcd931d04ded77/p-emea-bags-hc2?impolicy=myresize&rw=640",
+    "description": "Collezione borse ufficiali per Europa, disponibili in varie misure.",
+    "tag": "collection"
   }
 ]
