@@ -22,13 +22,13 @@ const Inventory = () => {
   }, []);
 
   return (
-    <div className="bg-hd-dark min-h-screen pt-36 pb-10">
+    <div className="bg-hd-dark min-h-screen pt-24 md:pt-36 pb-10">
       <div className="max-w-7xl mx-auto px-4">
         
-        <div className="flex justify-between items-end mb-12">
+        <div className="flex justify-between items-center md:items-end mb-8 md:mb-12">
             <SectionTitle title="Il Nostro Stock" subtitle="Pronta Consegna" />
             <button 
-                className="lg:hidden flex items-center gap-2 text-white border border-white/30 px-4 py-2 uppercase font-bold"
+                className="lg:hidden flex items-center gap-2 text-white border border-white/30 px-4 py-2 uppercase font-bold text-sm"
                 onClick={() => setShowMobileFilters(!showMobileFilters)}
             >
                 <Filter size={16} /> Filtri

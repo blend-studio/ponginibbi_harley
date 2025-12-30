@@ -25,7 +25,7 @@ const History = () => {
        <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1558980394-0a06c46e60e7?q=80&w=2670&auto=format&fit=crop" 
+            src="https://img.freepik.com/free-photo/full-shot-man-riding-motorbike_23-2150810243.jpg?t=st=1767091891~exp=1767095491~hmac=0a9bfb927248e154cdeffc95977f8aaf69824382204d02e00abd84b80ad87cb9&w=1060" 
             alt="History" 
             className="w-full h-full object-cover opacity-40 grayscale"
           />
@@ -56,28 +56,28 @@ const History = () => {
                 year="1958"
                 title="Le Origini"
                 description="Tutto inizia con una piccola officina meccanica nel cuore di Piacenza. La passione e la competenza tecnica diventano subito il marchio di fabbrica della famiglia Ponginibbi."
-                image="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2670&auto=format&fit=crop"
+                image="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060"
                 align="left"
              />
              <HistoryEvent 
                 year="2000"
                 title="Nasce il Sogno Americano"
                 description="Con l'arrivo del nuovo millennio, Ponginibbi abbraccia la leggenda. Diventiamo concessionaria ufficiale Harley-Davidson®, portando il mito di Milwaukee sulle strade emiliane."
-                image="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop"
+                image="https://img.freepik.com/free-photo/biking-motorcycle-forest_114579-5198.jpg?t=st=1767091041~exp=1767094641~hmac=eb78590e36e9afcf912609ca73db90bf1d5797444838d34653c3727d46844717&w=1060"
                 align="right"
              />
              <HistoryEvent 
                 year="2010"
                 title="La Nuova Cattedrale"
                 description="Inauguriamo la nuova sede in Via Emilia Pavese. Uno showroom moderno, un'officina all'avanguardia e uno spazio dedicato al Chapter e agli eventi. Il punto di ritrovo per tutti i bikers."
-                image="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574&auto=format&fit=crop"
+                image="https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150229753.jpg?t=st=1767091952~exp=1767095552~hmac=8c4903869ad282d99558ed1d1d9baeacb89ab5bc8ad59cdde76e1cb93170e051&w=1060"
                 align="left"
              />
              <HistoryEvent 
                 year="2024"
                 title="Verso il Futuro"
                 description="Oggi, come allora, guardiamo avanti. Abbracciamo l'evoluzione elettrica con LiveWire™, continuiamo a formare nuovi piloti con la Riding Academy e manteniamo viva la tradizione."
-                image="https://images.unsplash.com/photo-1622185135505-2d795043df63?q=80&w=2670&auto=format&fit=crop"
+                image="https://img.freepik.com/free-psd/white-hard-hat-safety-equipment-construction-work-protection_191095-80944.jpg?t=st=1767091891~exp=1767095491~hmac=6657fc156aca7c6e18010418a21f3b6b7aa62ca0f6a6ec4964166ea27f1523a4&w=1060"
                 align="right"
              />
          </div>

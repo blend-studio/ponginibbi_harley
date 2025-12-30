@@ -20,7 +20,7 @@ const Maintenance = () => {
         <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
                 <img 
-                    src="https://images.unsplash.com/photo-1558981806-ec527fa84c3d?q=80&w=2670&auto=format&fit=crop" 
+                    src="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060" 
                     alt="Service Workshop" 
                     className="w-full h-full object-cover opacity-50"
                 />
@@ -106,7 +106,7 @@ const Maintenance = () => {
                         </Link>
                     </div>
                     <div className="w-full md:w-1/3">
-                        <img src="https://images.unsplash.com/photo-1558980394-a3099ed53abb?q=80&w=2670&auto=format&fit=crop" alt="Express Lane" className="w-full h-auto rounded-sm border border-white/20" />
+                        <img src="https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150229753.jpg?t=st=1767091952~exp=1767095552~hmac=8c4903869ad282d99558ed1d1d9baeacb89ab5bc8ad59cdde76e1cb93170e051&w=1060" alt="Express Lane" className="w-full h-auto rounded-sm border border-white/20" />
                     </div>
                 </div>
           </div>

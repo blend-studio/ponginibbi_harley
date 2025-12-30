@@ -24,12 +24,12 @@ const LearnToRide = () => {
     <div className="bg-hd-dark min-h-screen pt-20">
       {/* Hero */}
       <div className="relative h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop" 
-            alt="Learn to Ride" 
-            className="w-full h-full object-cover opacity-60"
-          />
+                <div className="absolute inset-0">
+                    <img 
+                        src="https://img.freepik.com/free-photo/full-shot-man-riding-motorbike_23-2150810243.jpg?t=st=1767091891~exp=1767095491~hmac=0a9bfb927248e154cdeffc95977f8aaf69824382204d02e00abd84b80ad87cb9&w=1060" 
+                        alt="Learn to Ride" 
+                        className="w-full h-full object-cover opacity-60"
+                    />
           <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
         </div>
         <div className="relative z-10 text-center px-4 max-w-5xl">
@@ -52,21 +52,21 @@ const LearnToRide = () => {
                 subtitle="Nuovi Piloti"
                 description="Il corso perfetto per chi non ha mai guidato o vuole partire dalle basi. Impara l'equilibrio, l'uso della frizione, le curve e la frenata in un ambiente sicuro e controllato."
                 link="/learn-to-ride/new-rider"
-                image="https://images.unsplash.com/photo-1558980394-0a06c46e60e7?q=80&w=2670&auto=format&fit=crop"
+                    image="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060"
             />
             <CourseCard 
                 title="Esperti"
                 subtitle="Piloti Navigati"
                 description="Migliora le tue abilità, impara tecniche avanzate di controllo a bassa velocità, frenata d'emergenza e traiettorie per dominare ogni curva con sicurezza."
                 link="/learn-to-ride/skilled"
-                image="https://images.unsplash.com/photo-1609630875171-b1321377ee53?q=80&w=2670&auto=format&fit=crop"
+                image="https://img.freepik.com/free-photo/biking-motorcycle-forest_114579-5198.jpg?t=st=1767091041~exp=1767094641~hmac=eb78590e36e9afcf912609ca73db90bf1d5797444838d34653c3727d46844717&w=1060"
             />
             <CourseCard 
                 title="Workshop"
                 subtitle="Tecnica & Manutenzione"
                 description="Scopri i segreti della tua moto. Workshop pratici sulla manutenzione base, controlli pre-viaggio e sulla tecnologia H-D."
                 link="/learn-to-ride/workshop"
-                image="https://images.unsplash.com/photo-1537368910025-bc005ca23c50?q=80&w=2574&auto=format&fit=crop"
+                image="https://img.freepik.com/free-psd/white-hard-hat-safety-equipment-construction-work-protection_191095-80944.jpg?t=st=1767091891~exp=1767095491~hmac=6657fc156aca7c6e18010418a21f3b6b7aa62ca0f6a6ec4964166ea27f1523a4&w=1060"
             />
         </div>
 
@@ -113,11 +113,11 @@ const LearnToRide = () => {
                  </p>
                  <div className="grid grid-cols-2 gap-4">
                      <div className="relative group overflow-hidden">
-                         <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=2578&auto=format&fit=crop" alt="Instructor" className="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all" />
+                         <img src="https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150229753.jpg?t=st=1767091952~exp=1767095552~hmac=8c4903869ad282d99558ed1d1d9baeacb89ab5bc8ad59cdde76e1cb93170e051&w=1060" alt="Instructor" className="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all" />
                          <div className="absolute bottom-0 left-0 bg-black/80 w-full p-2 text-center text-white font-bold font-condensed uppercase">Mario Rossi</div>
                      </div>
                      <div className="relative group overflow-hidden">
-                         <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2578&auto=format&fit=crop" alt="Instructor" className="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all" />
+                         <img src="https://img.freepik.com/free-photo/full-shot-man-riding-motorbike_23-2150810243.jpg?t=st=1767091891~exp=1767095491~hmac=0a9bfb927248e154cdeffc95977f8aaf69824382204d02e00abd84b80ad87cb9&w=1060" alt="Instructor" className="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all" />
                          <div className="absolute bottom-0 left-0 bg-black/80 w-full p-2 text-center text-white font-bold font-condensed uppercase">Luca Bianchi</div>
                      </div>
                  </div>
@@ -141,7 +141,7 @@ const LearnToRide = () => {
             </div>
             <div className="flex-1 w-full relative z-10">
                 <img 
-                    src="https://images.unsplash.com/photo-1558980664-2506fca6bfc2?q=80&w=2670&auto=format&fit=crop" 
+                    src="https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150229753.jpg?t=st=1767091952~exp=1767095552~hmac=8c4903869ad282d99558ed1d1d9baeacb89ab5bc8ad59cdde76e1cb93170e051&w=1060" 
                     alt="Jumpstart" 
                     className="w-full h-96 object-cover shadow-2xl border-4 border-white/10 rounded-sm"
                 />

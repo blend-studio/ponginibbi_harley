@@ -26,10 +26,10 @@ const EventRow = ({ date, month, title, location, description, image }) => (
 
 const Events = () => {
   return (
-    <div className="bg-hd-dark min-h-screen pt-20">
+    <div className="bg-hd-dark min-h-screen pt-24 md:pt-36 pb-20">
       
       {/* Hero */}
-      <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <div className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1558980664-2506fca6bfc2?q=80&w=2670&auto=format&fit=crop" 
@@ -39,40 +39,40 @@ const Events = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
         </div>
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-4 uppercase tracking-tight">
+          <h1 className="text-4xl md:text-8xl font-condensed font-bold text-white mb-4 uppercase tracking-tight leading-none">
             Ride <span className="text-hd-orange">Together</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto uppercase tracking-widest">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto uppercase tracking-widest">
             Eventi, Raduni e Vita di Club
           </p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-20">
+      <div className="max-w-7xl mx-auto px-4 py-16 md:py-20">
         
         {/* H.O.G. BANNER */}
-        <div className="relative rounded-sm overflow-hidden mb-24 group border border-white/10">
+        <div className="relative rounded-sm overflow-hidden mb-16 md:mb-24 group border border-white/10">
              <div className="absolute inset-0">
                  <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop" className="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-all duration-700" alt="HOG Chapter" />
                  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
              </div>
-             <div className="relative z-10 p-12 md:p-24 max-w-3xl">
+             <div className="relative z-10 p-8 md:p-24 max-w-3xl">
                  <div className="flex items-center gap-4 mb-6">
-                     <Users className="text-hd-orange" size={32} />
-                     <span className="text-white font-bold tracking-widest uppercase text-sm">Harley Owners Group™</span>
+                     <Users className="text-hd-orange shrink-0" size={24} md:size={32} />
+                     <span className="text-white font-bold tracking-widest uppercase text-xs md:text-sm">Harley Owners Group™</span>
                  </div>
-                 <h2 className="font-condensed font-bold text-5xl md:text-7xl text-white uppercase mb-8 leading-none">
+                 <h2 className="font-condensed font-bold text-4xl md:text-7xl text-white uppercase mb-6 md:mb-8 leading-none">
                      Piacenza <span className="text-hd-orange">Chapter</span>
                  </h2>
-                 <p className="text-xl text-gray-300 mb-10 leading-relaxed">
+                 <p className="text-lg md:text-xl text-gray-300 mb-8 md:mb-10 leading-relaxed">
                      Non guidare mai da solo. Unisciti al Chapter locale per vivere la vera esperienza Harley-Davidson. 
                      Raduni domenicali, viaggi in tutta Europa, cene e una fratellanza che dura una vita.
                  </p>
                  <div className="flex flex-col sm:flex-row gap-4">
-                    <button className="bg-hd-orange text-white px-8 py-4 font-condensed font-bold uppercase clip-slant hover:bg-white hover:text-black transition-colors">
+                    <button className="bg-hd-orange text-white px-8 py-4 font-condensed font-bold uppercase clip-slant hover:bg-white hover:text-black transition-colors text-sm md:text-base">
                         Diventa Socio
                     </button>
-                    <button className="border border-white text-white px-8 py-4 font-condensed font-bold uppercase clip-slant hover:bg-white hover:text-black transition-colors">
+                    <button className="border border-white text-white px-8 py-4 font-condensed font-bold uppercase clip-slant hover:bg-white hover:text-black transition-colors text-sm md:text-base">
                         Visita sito Chapter
                     </button>
                  </div>
@@ -81,13 +81,13 @@ const Events = () => {
 
         {/* CALENDARIO */}
         <div className="max-w-6xl mx-auto">
-            <div className="flex items-end justify-between mb-12 border-b border-white/10 pb-6">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 border-b border-white/10 pb-6 gap-4">
                 <div>
-                    <h3 className="font-condensed font-bold text-4xl text-white uppercase mb-2">Prossimi Eventi</h3>
-                    <p className="text-gray-400">Non perderti i nostri appuntamenti.</p>
+                    <h3 className="font-condensed font-bold text-3xl md:text-4xl text-white uppercase mb-2">Prossimi Eventi</h3>
+                    <p className="text-gray-400 text-sm md:text-base">Non perderti i nostri appuntamenti.</p>
                 </div>
-                <Link to="/events" className="hidden md:flex items-center gap-2 text-hd-orange font-bold uppercase hover:text-white transition-colors">
-                    Vedi tutto il calendario <ArrowRight size={20} />
+                <Link to="/events" className="flex items-center gap-2 text-hd-orange font-bold uppercase hover:text-white transition-colors text-sm">
+                    Vedi tutto il calendario <ArrowRight size={18} />
                 </Link>
             </div>
             
@@ -122,13 +122,13 @@ const Events = () => {
         </div>
 
         {/* Gallery Teaser */}
-        <div className="mt-24 text-center">
-             <Camera size={48} className="text-white mx-auto mb-6 opacity-50" />
-             <h3 className="font-condensed font-bold text-3xl text-white uppercase mb-4">Gallery Eventi</h3>
-             <p className="text-gray-400 max-w-2xl mx-auto mb-8">
+        <div className="mt-20 md:mt-24 text-center">
+             <Camera size={40} md:size={48} className="text-white mx-auto mb-6 opacity-50" />
+             <h3 className="font-condensed font-bold text-2xl md:text-3xl text-white uppercase mb-4">Gallery Eventi</h3>
+             <p className="text-gray-400 max-w-2xl mx-auto mb-8 text-sm md:text-base">
                  Rivivi i momenti migliori. Sfoglia le foto dei nostri raduni, feste e viaggi.
              </p>
-             <Link to="/gallery" className="inline-block border border-white/20 text-white px-10 py-3 font-condensed font-bold uppercase hover:bg-white hover:text-black transition-all clip-slant">
+             <Link to="/gallery" className="inline-block border border-white/20 text-white px-8 md:px-10 py-3 font-condensed font-bold uppercase hover:bg-white hover:text-black transition-all clip-slant text-sm md:text-base">
                  Vai alla Gallery
              </Link>
         </div>

@@ -45,10 +45,10 @@ const ProductCard = ({ image, title, price, category, tag }) => (
 
 const Shop = () => {
   return (
-    <div className="bg-hd-dark min-h-screen pt-20">
+    <div className="bg-hd-dark min-h-screen pt-24 md:pt-36 pb-20">
       
       {/* Hero */}
-      <div className="relative h-[50vh] flex items-center justify-center overflow-hidden mb-20">
+      <div className="relative h-[50vh] flex items-center justify-center overflow-hidden mb-12 md:mb-20">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop" 
@@ -58,10 +58,10 @@ const Shop = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
         </div>
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-4 uppercase tracking-tight">
+          <h1 className="text-4xl md:text-8xl font-condensed font-bold text-white mb-4 uppercase tracking-tight leading-none">
             Motor<span className="text-hd-orange">Clothes</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto uppercase tracking-widest">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto uppercase tracking-widest">
             Stile. Protezione. Attitudine.
           </p>
         </div>
@@ -70,7 +70,7 @@ const Shop = () => {
       <div className="max-w-7xl mx-auto px-4">
         
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16 md:mb-24">
              <CategoryCard 
                 title="Uomo" 
                 subtitle="Nuova Collezione"
@@ -98,18 +98,18 @@ const Shop = () => {
         </div>
 
         {/* New Arrivals Preview */}
-        <div className="mb-24">
-            <div className="flex justify-between items-end mb-12 border-b border-white/10 pb-6">
+        <div className="mb-16 md:mb-24">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 md:mb-12 border-b border-white/10 pb-6 gap-4">
                  <div>
-                    <h3 className="font-condensed font-bold text-4xl text-white uppercase mb-2">Nuovi Arrivi</h3>
-                    <p className="text-gray-400">Le ultime novità disponibili in showroom.</p>
+                    <h3 className="font-condensed font-bold text-3xl md:text-4xl text-white uppercase mb-2">Nuovi Arrivi</h3>
+                    <p className="text-gray-400 text-sm md:text-base">Le ultime novità disponibili in showroom.</p>
                  </div>
-                 <Link to="/shop/apparel" className="text-hd-orange font-bold uppercase hover:text-white transition-colors flex items-center gap-2">
-                    Vedi Tutto <ArrowRight size={20} />
+                 <Link to="/shop/apparel" className="text-hd-orange font-bold uppercase hover:text-white transition-colors flex items-center gap-2 text-sm">
+                    Vedi Tutto <ArrowRight size={18} />
                  </Link>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                 <ProductCard 
                     image="https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=2670&auto=format&fit=crop"
                     title="Willie G. Leather Jacket"
@@ -140,15 +140,15 @@ const Shop = () => {
         </div>
 
         {/* ONLINE SHOP TEASER */}
-        <div className="bg-gradient-to-r from-white/10 to-transparent border border-white/10 p-16 text-center relative overflow-hidden mb-20">
-             <ShoppingBag size={64} className="mx-auto mb-6 text-hd-orange opacity-80" />
-             <h3 className="font-condensed font-bold text-5xl uppercase mb-6 text-white">Shop Online In Arrivo</h3>
-             <p className="max-w-2xl mx-auto mb-10 text-xl text-gray-300">
+        <div className="bg-gradient-to-r from-white/10 to-transparent border border-white/10 p-8 md:p-16 text-center relative overflow-hidden mb-20">
+             <ShoppingBag size={64} className="mx-auto mb-6 text-hd-orange opacity-80 hidden sm:block" />
+             <h3 className="font-condensed font-bold text-3xl md:text-5xl uppercase mb-6 text-white leading-tight">Shop Online In Arrivo</h3>
+             <p className="max-w-2xl mx-auto mb-10 text-base md:text-xl text-gray-300">
                 Stiamo lavorando per portare l'esperienza Ponginibbi direttamente a casa tua. 
                 Presto potrai acquistare abbigliamento, accessori e gift card comodamente online.
              </p>
-             <div className="flex justify-center gap-4">
-                <Link to="/contact" className="bg-hd-orange text-white px-10 py-4 font-condensed font-bold uppercase clip-slant hover:bg-white hover:text-black transition-colors">
+             <div className="flex justify-center">
+                <Link to="/contact" className="bg-hd-orange text-white px-8 md:px-10 py-3 md:py-4 font-condensed font-bold uppercase clip-slant hover:bg-white hover:text-black transition-colors text-sm md:text-base">
                     Iscriviti alla Newsletter
                 </Link>
              </div>

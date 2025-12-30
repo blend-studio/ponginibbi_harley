@@ -39,14 +39,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-hd-dark min-h-screen pt-36 pb-20">
+    <div className="bg-hd-dark min-h-screen pt-24 md:pt-36 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         
         <SectionTitle title="Chi Siamo" subtitle="PONGINIBBI GROUP" />
 
         {/* STORY SECTION */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-center">
-            <div className="text-lg text-gray-300 space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 md:mb-20 items-center">
+            <div className="text-base md:text-lg text-gray-300 space-y-6">
                 <p>
                     <strong className="text-white text-2xl font-condensed uppercase block mb-2">United We Ride.</strong>
                     La nostra missione è realizzare i sogni di libertà personale. Da oltre 50 anni, il Gruppo Ponginibbi è sinonimo di eccellenza automobilistica e motociclistica a Piacenza.
@@ -62,57 +62,57 @@ const Contact = () => {
                     le tue storie di viaggio.
                 </p>
             </div>
-            <div className="relative">
-                 <div className="absolute top-4 -left-4 w-full h-full border-2 border-hd-orange z-0"></div>
-                 <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop" className="relative z-10 w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" alt="Showroom" />
+            <div className="relative mt-8 lg:mt-0">
+                 <div className="absolute top-4 -left-4 w-full h-full border-2 border-hd-orange z-0 hidden sm:block"></div>
+                 <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop" className="relative z-10 w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl rounded-sm" alt="Showroom" />
             </div>
         </div>
         
-        <div className="h-px bg-white/10 w-full mb-20"></div>
+        <div className="h-px bg-white/10 w-full mb-16 md:mb-20"></div>
 
         <SectionTitle title="Contattaci" subtitle="VIENI A TROVARCI" center={true} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <div>
-                <h3 className="text-3xl font-condensed font-bold text-white mb-6 uppercase">Info & Contatti</h3>
-                <p className="text-gray-400 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+            <div className="order-2 lg:order-1">
+                <h3 className="text-2xl md:text-3xl font-condensed font-bold text-white mb-6 uppercase">Info & Contatti</h3>
+                <p className="text-gray-400 mb-8 text-sm md:text-base">
                     Siamo a tua disposizione per qualsiasi informazione su moto, assistenza, ricambi o abbigliamento.
                 </p>
                 
-                <div className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 md:gap-6">
                     <div className="flex items-start gap-4 p-4 border border-white/5 bg-white/5 hover:border-hd-orange transition-colors">
-                        <MapPin className="text-hd-orange mt-1" />
+                        <MapPin className="text-hd-orange mt-1 shrink-0" />
                         <div>
                             <h4 className="font-bold text-white uppercase text-sm mb-1">Indirizzo</h4>
-                            <p className="text-gray-400">Via Emilia Pavese, Piacenza</p>
+                            <p className="text-gray-400 text-sm">Via Emilia Pavese, Piacenza</p>
                         </div>
                     </div>
                     <div className="flex items-start gap-4 p-4 border border-white/5 bg-white/5 hover:border-hd-orange transition-colors">
-                        <Phone className="text-hd-orange mt-1" />
+                        <Phone className="text-hd-orange mt-1 shrink-0" />
                         <div>
                             <h4 className="font-bold text-white uppercase text-sm mb-1">Telefono</h4>
-                            <p className="text-gray-400">0523 123456</p>
+                            <p className="text-gray-400 text-sm">0523 123456</p>
                         </div>
                     </div>
                     <div className="flex items-start gap-4 p-4 border border-white/5 bg-white/5 hover:border-hd-orange transition-colors">
-                        <Mail className="text-hd-orange mt-1" />
+                        <Mail className="text-hd-orange mt-1 shrink-0" />
                         <div>
                             <h4 className="font-bold text-white uppercase text-sm mb-1">Email</h4>
-                            <p className="text-gray-400">info@ponginibbi.it</p>
+                            <p className="text-gray-400 text-sm">info@ponginibbi.it</p>
                         </div>
                     </div>
-                     <div className="flex items-start gap-4 p-4 border border-white/5 bg-white/5 hover:border-hd-orange transition-colors">
-                        <Clock className="text-hd-orange mt-1" />
+                     <div className="flex items-start gap-4 p-4 border border-white/5 bg-white/5 hover:border-hd-orange transition-colors sm:col-span-2 lg:col-span-1">
+                        <Clock className="text-hd-orange mt-1 shrink-0" />
                         <div>
                             <h4 className="font-bold text-white uppercase text-sm mb-1">Orari Showroom</h4>
-                            <p className="text-gray-400">Lun - Ven: 08:30 - 12:30 / 14:30 - 19:00</p>
-                            <p className="text-gray-400">Sabato: 09:00 - 12:30 / 15:00 - 18:00</p>
+                            <p className="text-gray-400 text-sm">Lun - Ven: 08:30 - 12:30 / 14:30 - 19:00</p>
+                            <p className="text-gray-400 text-sm">Sabato: 09:00 - 12:30 / 15:00 - 18:00</p>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div className="bg-white/5 p-8 border border-white/10 h-fit relative">
+            <div className="bg-white/5 p-6 md:p-8 border border-white/10 h-fit relative order-1 lg:order-2">
                  <h3 className="text-2xl font-condensed font-bold text-white mb-6 uppercase">Scrivici</h3>
                  
                  <AnimatePresence>
@@ -205,7 +205,7 @@ const Contact = () => {
                             onChange={handleChange}
                             className="mt-1 accent-hd-orange w-4 h-4 cursor-pointer" 
                         />
-                        <label htmlFor="privacy" className="text-xs text-gray-400 cursor-pointer select-none">
+                        <label htmlFor="privacy" className="text-xs text-gray-400 cursor-pointer select-none leading-tight">
                             Dichiaro di aver letto l'informativa sulla privacy e acconsento al trattamento dei miei dati personali ai sensi del GDPR.
                         </label>
                      </div>

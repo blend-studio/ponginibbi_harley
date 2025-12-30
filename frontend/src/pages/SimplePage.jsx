@@ -8,7 +8,7 @@ const SimplePage = ({ title, subtitle, image, children, ctaLink, ctaText }) => {
        <div className="relative h-[40vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={image || "https://images.unsplash.com/photo-1558980664-2506fca6bfc2?q=80&w=2670&auto=format&fit=crop"} 
+            src={image || "https://img.freepik.com/free-photo/full-shot-man-riding-motorbike_23-2150810243.jpg?t=st=1767091891~exp=1767095491~hmac=0a9bfb927248e154cdeffc95977f8aaf69824382204d02e00abd84b80ad87cb9&w=1060"} 
             alt={title} 
             className="w-full h-full object-cover opacity-50"
           />

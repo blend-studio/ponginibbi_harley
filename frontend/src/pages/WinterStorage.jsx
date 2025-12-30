@@ -24,7 +24,7 @@ const WinterStorage = () => {
          <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
                 <img 
-                    src="https://images.unsplash.com/photo-1622185135505-2d795043dfeb?q=80&w=2670&auto=format&fit=crop" 
+                    src="https://img.freepik.com/free-photo/biking-motorcycle-forest_114579-5198.jpg?t=st=1767091041~exp=1767094641~hmac=eb78590e36e9afcf912609ca73db90bf1d5797444838d34653c3727d46844717&w=1060" 
                     alt="Winter Storage" 
                     className="w-full h-full object-cover opacity-50"
                 />
