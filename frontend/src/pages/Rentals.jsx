@@ -23,7 +23,7 @@ const Step = ({ number, title, text }) => (
 
 const Rentals = () => {
   return (
-    <div className="bg-hd-dark min-h-screen pt-20">
+    <div className="bg-hd-dark min-h-screen">
       {/* Hero Section */}
       <div className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -35,7 +35,7 @@ const Rentals = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-hd-dark/30 to-transparent"></div>
         </div>
         
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-20">
           <span className="block text-hd-orange font-bold tracking-widest uppercase mb-4 text-xs md:text-base animate-fade-in-up">Authorized Rentals</span>
           <h1 className="text-4xl md:text-8xl font-condensed font-bold text-white mb-6 uppercase tracking-tight animate-fade-in-up delay-100 leading-none">
             Noleggia la <span className="text-hd-orange">Libertà</span>

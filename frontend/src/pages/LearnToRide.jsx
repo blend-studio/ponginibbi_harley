@@ -21,7 +21,7 @@ const CourseCard = ({ title, subtitle, description, link, image }) => (
 
 const LearnToRide = () => {
   return (
-    <div className="bg-hd-dark min-h-screen pt-20">
+    <div className="bg-hd-dark min-h-screen">
       {/* Hero */}
       <div className="relative h-[70vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -32,7 +32,7 @@ const LearnToRide = () => {
                     />
           <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
         </div>
-        <div className="relative z-10 text-center px-4 max-w-5xl">
+        <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
           <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-6 uppercase tracking-tight">
             Inizia il <span className="text-hd-orange">Viaggio</span>
           </h1>

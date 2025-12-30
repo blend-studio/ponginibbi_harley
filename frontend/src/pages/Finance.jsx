@@ -61,7 +61,7 @@ const FAQItem = ({ question, answer }) => {
 
 const Finance = () => {
   return (
-    <div className="bg-hd-dark min-h-screen pt-20">
+    <div className="bg-hd-dark min-h-screen">
       {/* Hero Section */}
       <div className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -73,7 +73,7 @@ const Finance = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-hd-dark/50 to-hd-dark"></div>
         </div>
         
-        <div className="relative z-10 text-center px-4">
+        <div className="relative z-10 text-center px-4 pt-20">
           <h1 className="text-4xl md:text-8xl font-condensed font-bold text-white mb-4 uppercase tracking-tight leading-none">
             H-D Financial <br /><span className="text-hd-orange">Services</span>
           </h1>

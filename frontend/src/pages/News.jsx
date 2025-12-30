@@ -30,7 +30,7 @@ const NewsCard = ({ date, category, title, excerpt, image }) => (
 
 const News = () => {
   return (
-    <div className="bg-hd-dark min-h-screen pt-20">
+    <div className="bg-hd-dark min-h-screen">
        <div className="relative h-[40vh] flex items-center justify-center overflow-hidden mb-20">
             <div className="absolute inset-0">
                 <img 
@@ -40,7 +40,7 @@ const News = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
             </div>
-            <div className="relative z-10 text-center px-4">
+            <div className="relative z-10 text-center px-4 pt-20">
                 <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-2 uppercase tracking-tight">
                     News
                 </h1>

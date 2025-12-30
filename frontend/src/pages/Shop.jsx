@@ -45,7 +45,7 @@ const ProductCard = ({ image, title, price, category, tag }) => (
 
 const Shop = () => {
   return (
-    <div className="bg-hd-dark min-h-screen pt-24 md:pt-36 pb-20">
+    <div className="bg-hd-dark min-h-screen">
       
       {/* Hero */}
       <div className="relative h-[50vh] flex items-center justify-center overflow-hidden mb-12 md:mb-20">
@@ -57,7 +57,7 @@ const Shop = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
         </div>
-        <div className="relative z-10 text-center px-4">
+        <div className="relative z-10 text-center px-4 pt-20">
           <h1 className="text-4xl md:text-8xl font-condensed font-bold text-white mb-4 uppercase tracking-tight leading-none">
             Motor<span className="text-hd-orange">Clothes</span>
           </h1>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -63,13 +64,13 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.2 }}
           className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 md:gap-6"
         >
-            <button className="relative group overflow-hidden bg-hd-orange px-6 md:px-8 py-3 md:py-4 font-condensed font-bold text-lg md:text-xl uppercase tracking-wider text-white clip-slant hover:bg-white hover:text-hd-black transition-all duration-300">
+            <Link to="/inventory" className="relative group overflow-hidden bg-hd-orange px-6 md:px-8 py-3 md:py-4 font-condensed font-bold text-base md:text-lg uppercase tracking-wider text-white clip-slant hover:bg-white hover:text-hd-black transition-all duration-300 inline-block text-center">
                 <span className="relative z-10">Esplora Stock</span>
                 <div className="absolute inset-0 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></div>
-            </button>
-            <button className="px-6 md:px-8 py-3 md:py-4 border border-white/30 text-white font-condensed font-bold text-lg md:text-xl uppercase tracking-wider hover:border-hd-orange hover:text-hd-orange transition-all duration-300 backdrop-blur-sm">
+            </Link>
+            <Link to="/test-ride" className="px-6 md:px-8 py-3 md:py-4 border border-white/30 text-white font-condensed font-bold text-base md:text-lg uppercase tracking-wider hover:border-hd-orange hover:text-hd-orange transition-all duration-300 backdrop-blur-sm inline-block text-center">
                 Prenota Test Ride
-            </button>
+            </Link>
         </motion.div>
       </div>
 

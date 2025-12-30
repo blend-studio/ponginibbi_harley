@@ -28,17 +28,17 @@ const Gallery = () => {
     ];
 
   return (
-    <div className="bg-hd-dark min-h-screen pt-20">
+    <div className="bg-hd-dark min-h-screen">
        <div className="relative h-[40vh] flex items-center justify-center overflow-hidden mb-20">
             <div className="absolute inset-0">
                 <img 
-                    src="https://img.freepik.com/free-photo/full-shot-man-riding-motorbike_23-2150810243.jpg?t=st=1767091891~exp=1767095491~hmac=0a9bfb927248e154cdeffc95977f8aaf69824382204d02e00abd84b80ad87cb9&w=1060" 
+                    src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop" 
                     alt="Gallery Hero" 
                     className="w-full h-full object-cover opacity-50 grayscale"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
             </div>
-            <div className="relative z-10 text-center px-4">
+            <div className="relative z-10 text-center px-4 pt-20">
                 <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-2 uppercase tracking-tight">
                     Gallery
                 </h1>

@@ -60,7 +60,7 @@ const OfferCard = ({ title, subtitle, price, discountPrice, features, validUntil
 const ServiceOffers = () => {
   return (
     <AnimatedPage>
-      <div className="bg-hd-dark min-h-screen pt-20">
+      <div className="bg-hd-dark min-h-screen">
          {/* Hero */}
          <div className="relative h-[50vh] flex items-center justify-center overflow-hidden mb-16 md:mb-20">
             <div className="absolute inset-0">
@@ -71,7 +71,7 @@ const ServiceOffers = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-hd-dark/20 to-transparent"></div>
             </div>
-            <div className="relative z-10 text-center px-4">
+            <div className="relative z-10 text-center px-4 pt-20">
                 <h1 className="text-4xl md:text-8xl font-condensed font-bold text-white mb-4 uppercase tracking-tight leading-none">
                     Service <span className="text-hd-orange">Specials</span>
                 </h1>
