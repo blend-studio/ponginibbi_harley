@@ -8,7 +8,7 @@ const Marquee = () => {
           <span key={i} className="text-black font-condensed font-bold text-4xl uppercase tracking-widest flex items-center gap-10">
             RIDE FREE <span className="text-white text-2xl">★</span> 
             PONGINIBBI GROUP <span className="text-white text-2xl">★</span> 
-            SINCE 19XX <span className="text-white text-2xl">★</span>
+            SINCE 1965 <span className="text-white text-2xl">★</span>
           </span>
         ))}
       </div>
