@@ -1,11 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
+  const [isIpadPortrait, setIsIpadPortrait] = useState(false);
+
+  useEffect(() => {
+    const detect = () => {
+      try {
+        const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+        const isiPadUA = /iPad/.test(ua);
+        const isiPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+        const isIpadDevice = isiPadUA || isiPadOS;
+        const isPortrait = window.matchMedia ? window.matchMedia('(orientation: portrait)').matches : (window.innerHeight > window.innerWidth);
+        const width = window.innerWidth || document.documentElement.clientWidth || 0;
+        const isIpadBreakpoint = width >= 768 && width <= 1024;
+        setIsIpadPortrait(Boolean(isIpadDevice && isPortrait && isIpadBreakpoint));
+      } catch (e) {
+        setIsIpadPortrait(false);
+      }
+    };
+
+    detect();
+    window.addEventListener('resize', detect);
+    window.addEventListener('orientationchange', detect);
+    return () => {
+      window.removeEventListener('resize', detect);
+      window.removeEventListener('orientationchange', detect);
+    };
+  }, []);
+
   return (
-    <div className="relative min-h-[100svh] md:h-screen w-full overflow-hidden bg-black clip-diagonal flex flex-col justify-center pb-24 md:pb-56 lg:pb-0">
+    <div className={`relative min-h-[100svh] md:h-screen w-full overflow-hidden bg-black clip-diagonal flex flex-col justify-center pb-24 md:pb-56 lg:pb-0 ${isIpadPortrait ? 'ipad-portrait-hero' : ''}`}>
       
       {/* BACKGROUND ANIMATO */}
       <div className="absolute inset-0 overflow-hidden">
@@ -16,7 +43,7 @@ const HeroSection = () => {
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-10 w-full px-6 md:px-20 max-w-7xl mx-auto py-12 md:py-0">
+      <div className="relative z-10 w-full px-6 md:px-20 max-w-7xl mx-auto py-12 md:pt-48 lg:py-0 hero-content">
         
         <motion.div 
           initial={{ opacity: 0, x: -50 }}

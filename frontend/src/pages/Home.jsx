@@ -29,10 +29,10 @@ const Home = () => {
             <ScrollReveal>
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 px-2">
                     <div>
-                        <h2 className="text-outline text-5xl md:text-9xl font-condensed font-bold uppercase opacity-10 absolute -top-8 md:-top-16 left-0 select-none pointer-events-none hidden md:block">
+                        <h2 className="text-outline text-5xl md:text-7xl lg:text-9xl font-condensed font-bold uppercase opacity-10 absolute -top-8 md:-top-12 lg:-top-16 left-0 select-none pointer-events-none hidden md:block">
                             Garage
                         </h2>
-                        <h2 className="text-white text-4xl md:text-7xl font-condensed font-bold uppercase relative z-10 leading-[0.9]">
+                        <h2 className="text-white text-4xl md:text-5xl lg:text-7xl font-condensed font-bold uppercase relative z-10 leading-[0.9]">
                             Nuovi <span className="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">Arrivi</span>
                         </h2>
                         <p className="text-gray-400 mt-4 max-w-md font-mono text-sm">
@@ -61,24 +61,24 @@ const Home = () => {
          </div>
       </section>
 
-      {/* 4. SEZIONE CATEGORIE (Rimane invariata ma sempre d'impatto) */}
+      {/* 4. SEZIONE CATEGORIE */}
       <section className="py-12 md:py-20 bg-white text-black clip-diagonal-up pb-32 md:pb-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <ScrollReveal>
-                <h2 className="text-5xl md:text-9xl font-condensed font-bold uppercase mb-8 md:mb-12 tracking-tighter leading-none">
+                <h2 className="text-5xl md:text-7xl lg:text-9xl font-condensed font-bold uppercase mb-8 md:mb-12 tracking-tighter leading-none">
                     Choose your<br/><span className="text-hd-orange">Legend</span>
                 </h2>
             </ScrollReveal>
             
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-2 h-auto md:h-[600px]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 h-auto lg:h-[600px]">
                 {/* Cruiser - Grande */}
-                <div className="md:col-span-8 bg-gray-200 relative group overflow-hidden cursor-pointer clip-corner h-[400px] md:h-full">
+                <div className="lg:col-span-8 bg-gray-200 relative group overflow-hidden cursor-pointer clip-corner h-[400px] lg:h-full">
                     <ScrollReveal delay={0.1} width="100%" height="100%">
                         <img
                             src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80"
                             alt="Cruiser motorcycle"
                             loading="lazy"
-                            onError={(e) => { e.currentTarget.src = '/images/harley/harley-davidson-1.png'; }}
+                            onError={(e) => { e.currentTarget.src = `${import.meta.env.BASE_URL}images/harley/harley-davidson-1.png`; }}
                             className="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105 saturate-0 group-hover:saturate-100"
                         />
                         <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
@@ -87,14 +87,14 @@ const Home = () => {
                 </div>
                 
                 {/* Touring & Sport */}
-                <div className="md:col-span-4 flex flex-col gap-2 h-[400px] md:h-full">
+                <div className="lg:col-span-4 flex flex-col gap-2 h-[600px] lg:h-full">
                     <div className="flex-1 bg-gray-800 relative group overflow-hidden cursor-pointer clip-corner">
                          <ScrollReveal delay={0.2} width="100%" height="100%" direction="left">
                              <img
                                  src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1400&q=80"
                                  alt="Touring motorcycle"
                                  loading="lazy"
-                                 onError={(e) => { e.currentTarget.src = '/images/harley/harley-davidson-1.png'; }}
+                                 onError={(e) => { e.currentTarget.src = `${import.meta.env.BASE_URL}images/harley/harley-davidson-1.png`; }}
                                  className="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105"
                              />
                              <div className="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors"></div>
@@ -107,7 +107,7 @@ const Home = () => {
                                  src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=80"
                                  alt="Sport motorcycle"
                                  loading="lazy"
-                                 onError={(e) => { e.currentTarget.src = '/images/harley/harley-davidson-1.png'; }}
+                                 onError={(e) => { e.currentTarget.src = `${import.meta.env.BASE_URL}images/harley/harley-davidson-1.png`; }}
                                  className="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105 mix-blend-multiply filter contrast-125"
                              />
                              <h3 className="absolute bottom-4 left-4 text-4xl font-condensed font-bold text-white uppercase italic drop-shadow-md">Sport</h3>
@@ -120,7 +120,7 @@ const Home = () => {
 
       {/* 5. SERVICES GRID */}
       <section className="bg-[#121212] pt-12 md:pt-20 pb-20 md:pb-32 px-4 md:px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center md:text-left">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 text-center md:text-left">
             <ScrollReveal delay={0.1} direction="up">
                 <div className="border border-white/10 p-6 md:p-10 hover:bg-white/5 transition-colors group relative overflow-hidden h-full">
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">

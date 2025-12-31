@@ -16,14 +16,28 @@ const Maintenance = () => {
     const [isIpad, setIsIpad] = useState(false);
 
     useEffect(() => {
-        try {
-            const ua = navigator.userAgent || navigator.vendor || window.opera;
-            const isiPadUA = /iPad/.test(ua);
-            const isiPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
-            setIsIpad(isiPadUA || isiPadOS);
-        } catch (e) {
-            setIsIpad(false);
-        }
+        const detect = () => {
+            try {
+                const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+                const isiPadUA = /iPad/.test(ua);
+                const isiPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+                const isIpadDevice = isiPadUA || isiPadOS;
+                const isPortrait = window.matchMedia ? window.matchMedia('(orientation: portrait)').matches : (window.innerHeight > window.innerWidth);
+                const width = window.innerWidth || document.documentElement.clientWidth || 0;
+                const isIpadBreakpoint = width >= 768 && width <= 1024;
+                setIsIpad(Boolean(isIpadDevice && isPortrait && isIpadBreakpoint));
+            } catch (e) {
+                setIsIpad(false);
+            }
+        };
+
+        detect();
+        window.addEventListener('resize', detect);
+        window.addEventListener('orientationchange', detect);
+        return () => {
+            window.removeEventListener('resize', detect);
+            window.removeEventListener('orientationchange', detect);
+        };
     }, []);
 
     return (
@@ -31,7 +45,7 @@ const Maintenance = () => {
     
       <div className="bg-hd-dark min-h-screen">
         {/* Hero */}
-        <div className="relative min-h-[55vh] md:h-[60vh] flex items-center justify-center overflow-hidden md:overflow-visible bg-black mb-12 md:mb-20">
+        <div className={`relative min-h-[55vh] md:h-[60vh] flex items-center justify-center overflow-hidden md:overflow-visible bg-black mb-12 md:mb-20 ${isIpad ? 'ipad-portrait-hero' : ''}`}>
             <div className="absolute inset-0">
                 <img 
                     src="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060" 

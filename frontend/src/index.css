@@ -163,4 +163,82 @@ body {
     line-height: 1 !important;
     letter-spacing: 0.01em;
   }
+
+  /* Specific adjustments when we force the ipad-portrait-hero class */
+  .ipad-portrait-hero {
+    min-height: 40vh !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+
+  .ipad-portrait-hero .absolute.inset-0 img {
+    object-position: center top !important;
+    opacity: 0.55 !important;
+    transform: none !important;
+  }
+
+  .ipad-portrait-hero .maintenance-hero-title {
+    font-size: 2rem !important;
+    line-height: 1.05 !important;
+    margin-bottom: 0.5rem !important;
+    letter-spacing: 0.01em;
+  }
+
+  .ipad-portrait-hero .inline-block {
+    transform: none !important;
+  }
+}
+
+/* Home hero tweaks on iPad portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .ipad-portrait-hero {
+    min-height: 60vh !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .ipad-portrait-hero .absolute.inset-0 img {
+    object-position: center top !important;
+    opacity: 0.6 !important;
+  }
+
+  .ipad-portrait-hero h1 {
+    font-size: 2.25rem !important;
+    line-height: 1.05 !important;
+    letter-spacing: 0.01em !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .ipad-portrait-hero p {
+    font-size: 0.95rem !important;
+    max-width: 90% !important;
+  }
+
+  .ipad-portrait-hero .mt-8,
+  .ipad-portrait-hero .mt-12 {
+    margin-top: 0.75rem !important;
+  }
+}
+
+/* Extra spacing for hero text and wider CTA on iPad portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .ipad-portrait-hero .hero-content {
+    margin-top: 3.75rem !important;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 3.5rem) !important;
+    position: relative !important;
+    z-index: 30 !important;
+  }
+
+  .ipad-portrait-hero .clip-slant {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    min-width: 220px !important;
+    font-size: 1rem !important;
+    white-space: nowrap !important;
+  }
+
+  /* hide the sliding overlay to prevent overflow issues and keep label visible */
+  .ipad-portrait-hero .clip-slant .absolute {
+    display: none !important;
+  }
 }
