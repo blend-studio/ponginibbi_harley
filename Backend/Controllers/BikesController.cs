@@ -1,7 +1,7 @@
 ﻿using Backend.Data;
 using Backend.Models;
-using BackendHarley.Data;
-using BackendHarley.Models;
+using Backend.Data;
+using Backend.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

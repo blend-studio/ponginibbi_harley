@@ -32,7 +32,7 @@ const ExpressLane = () => {
         <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
                 <img 
-                    src="https://img.freepik.com/free-photo/mechanic-checking-motorcycle_114579-4475.jpg?t=st=1767096000~exp=1767099600~hmac=123456" 
+                    src="https://images.pexels.com/photos/5195493/pexels-photo-5195493.jpeg" 
                     alt="Express Lane" 
                     className="w-full h-full object-cover opacity-60"
                     onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1600&q=80'; }}

@@ -1,5 +1,5 @@
-﻿using BackendHarley.Data;
-using BackendHarley.Models;
+﻿using Backend.Data;
+using Backend.Models;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json; // Usiamo Newtonsoft per compatibilità massima col tuo SDK
 using PublisherModels; // Il namespace delle tue classi SDK
