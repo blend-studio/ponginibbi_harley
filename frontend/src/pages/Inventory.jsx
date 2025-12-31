@@ -10,6 +10,7 @@ const Inventory = () => {
   const [bikes, setBikes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
+    const [filterModelYearCurrent, setFilterModelYearCurrent] = useState(false);
 
     // Catalog loaded from frontend/src/data/motorcycles.json
 
@@ -79,6 +80,18 @@ const Inventory = () => {
                         </div>
                     </div>
 
+                    <div className="mb-6">
+                        <label className="flex items-center text-white text-sm cursor-pointer group">
+                            <input
+                                type="checkbox"
+                                checked={filterModelYearCurrent}
+                                onChange={(e) => setFilterModelYearCurrent(e.target.checked)}
+                                className="mr-3 w-4 h-4 accent-hd-orange"
+                            />
+                            <span className="group-hover:text-hd-orange transition-colors">Model Year corrente</span>
+                        </label>
+                    </div>
+
                     <div className="mb-8">
                         <label className="block text-gray-400 text-sm mb-2 font-bold uppercase tracking-wider">Prezzo Max</label>
                         <input type="range" min="10000" max="50000" className="w-full accent-hd-orange" />
@@ -96,31 +109,39 @@ const Inventory = () => {
 
             {/* Grid Risultati */}
             <div className="w-full lg:w-3/4">
-                {loading ? (
+                        {loading ? (
                     <div className="flex justify-center items-center h-64">
                          <div className="w-16 h-16 border-4 border-hd-orange border-t-transparent rounded-full animate-spin"></div>
                     </div>
                 ) : (
-                    <motion.div 
-                        initial="hidden"
-                        animate="visible"
-                        variants={{
-                            visible: { transition: { staggerChildren: 0.1 } }
-                        }}
-                        className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                    >
-                        {bikes.map(bike => (
-                            <motion.div 
-                                key={bike.vid} 
-                                variants={{
-                                    hidden: { opacity: 0, y: 30 },
-                                    visible: { opacity: 1, y: 0 }
-                                }}
-                            >
-                                <BikeCard bike={bike} />
-                            </motion.div>
-                        ))}
-                    </motion.div>
+                                        (() => {
+                                            const currentYear = new Date().getFullYear();
+                                            const filtered = bikes.filter(b => {
+                                                if (filterModelYearCurrent) {
+                                                    const regYear = b.registrationDate ? new Date(b.registrationDate).getFullYear() : null;
+                                                    if (regYear !== currentYear) return false;
+                                                }
+                                                return true;
+                                            });
+
+                                            return (
+                                                <motion.div 
+                                                    initial="hidden"
+                                                    animate="visible"
+                                                    variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+                                                    className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                                                >
+                                                    {filtered.map(bike => (
+                                                        <motion.div 
+                                                            key={bike.vid}
+                                                            variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}
+                                                        >
+                                                            <BikeCard bike={bike} />
+                                                        </motion.div>
+                                                    ))}
+                                                </motion.div>
+                                            )
+                                        })()
                 )}
             </div>
 

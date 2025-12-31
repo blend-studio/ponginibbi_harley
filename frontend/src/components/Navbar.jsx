@@ -9,9 +9,7 @@ const NAV_ITEMS = [
     name: 'MOTO',
     path: '/inventory',
     submenu: [
-      { name: 'Model Year corrente', path: '/inventory?type=new&year=current' },
-      { name: 'Inventario motociclette nuove', path: '/inventory?type=new' },
-      { name: 'Inventario usato', path: '/inventory?type=used' },
+      { name: 'Inventario', path: '/inventory/' },
       { name: 'Noleggia una motocicletta', path: '/rentals', submenu: [
           { name: 'Prenotazione online', path: '/rentals/booking' }
       ]},
@@ -34,13 +32,12 @@ const NAV_ITEMS = [
     name: 'ASSISTENZA',
     path: '/services',
     submenu: [
-        { name: 'Offerte di assistenza', path: '/services/offers' },
-        { name: 'Ore di manutenzione', path: '/services/hours' },
-        { name: 'Richiedi appuntamento', path: '/service-appointment' },
-        { name: 'Promozioni', path: '/services/promos' },
-        { name: 'Richiesta di ricambi', path: '/parts-request' },
-        { name: 'Express Lane', path: '/services/express-lane' },
-        { name: 'Rimessaggio invernale', path: '/winter-storage' }
+      { name: 'Offerte di assistenza', path: '/services/offers' },
+      { name: 'Ore di manutenzione', path: '/services/hours' },
+      { name: 'Richiedi appuntamento', path: '/service-appointment' },
+      { name: 'Richiesta di ricambi', path: '/parts-request' },
+      { name: 'Express Lane', path: '/services/express-lane' },
+      { name: 'Rimessaggio invernale', path: '/winter-storage' }
     ]
   },
   {
@@ -49,7 +46,6 @@ const NAV_ITEMS = [
       submenu: [
           { name: 'Online Shop', path: '/shop' },
           { name: 'Gift Cards', path: '/shop/gift-cards' },
-          { name: 'Reparto ricambi', path: '/parts' },
           { name: 'Richiesta ricambi', path: '/parts-request' },
           { name: 'Abbigliamento', path: '/shop/apparel' },
           { name: 'Offerte/Promozioni', path: '/shop/offers' }
@@ -151,8 +147,8 @@ const Navbar = () => {
                           onMouseLeave={() => setHoveredMenu(null)}
                         >
                             <Link 
-                                to={item.path} 
-                                className={`flex items-center gap-1 font-condensed text-base font-bold transition-all hover:text-hd-orange py-5 ${isActive ? 'text-hd-orange' : 'text-white'}`}
+                              to={item.path} 
+                              className={`flex items-center gap-1 font-condensed text-base font-bold transition-all hover:text-hd-orange py-5 ${isActive ? 'text-hd-orange' : 'text-white'} ${item.name === 'CHI SIAMO' ? 'whitespace-nowrap' : ''}`}
                             >
                                 {item.name}
                                 {hasSubmenu && <ChevronDown size={14} className={`transition-transform duration-200 ${hoveredMenu === item.name ? 'rotate-180' : ''}`} />}
@@ -213,11 +209,12 @@ const Navbar = () => {
                         </div>
                     )
                 })}
-                <button 
-                    onClick={() => setIsContactModalOpen(true)}
-                    className="bg-hd-orange text-white hover:bg-white hover:text-black px-4 py-1.5 rounded-sm font-condensed font-bold transition-all duration-300 clip-slant text-sm ml-4"
+                <button
+                  onClick={() => setIsContactModalOpen(true)}
+                  className="inline-flex items-center justify-center bg-hd-orange text-white hover:bg-white hover:text-black px-7 py-1.5 font-condensed font-bold transition-all duration-300 clip-slant text-sm ml-4"
+                  aria-label="Apri contatti"
                 >
-                    CONTATTI
+                  CONTATTI
                 </button>
               </div>
             </div>
@@ -251,14 +248,14 @@ const Navbar = () => {
                 <div key={idx} className="border-b border-white/10 pb-2">
                     <div className="flex justify-between items-center">
                         <Link 
-                            to={item.path} 
-                            onClick={(e) => {
-                                if (item.submenu) {
-                                    e.preventDefault();
-                                    toggleMobileSubmenu(item.name);
-                                }
-                            }}
-                            className="font-condensed text-white text-3xl font-bold hover:text-hd-orange transition-colors flex-1"
+                          to={item.path} 
+                          onClick={(e) => {
+                            if (item.submenu) {
+                              e.preventDefault();
+                              toggleMobileSubmenu(item.name);
+                            }
+                          }}
+                          className={`font-condensed text-white text-3xl font-bold hover:text-hd-orange transition-colors flex-1 ${item.name === 'CHI SIAMO' ? 'whitespace-nowrap' : ''}`}
                         >
                             {item.name}
                         </Link>

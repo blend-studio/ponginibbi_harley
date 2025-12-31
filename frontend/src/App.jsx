@@ -5,13 +5,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Inventory from './pages/Inventory';
-import InventoryNew from './pages/InventoryNew';
-import InventoryUsed from './pages/InventoryUsed';
+
 import BikeDetail from './pages/BikeDetail';
 import Accessories from './pages/Accessories';
 import AccessoryDetail from './pages/AccessoryDetail';
 import Services from './pages/Services';
 import Shop from './pages/Shop';
+import GiftCards from './pages/GiftCards';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Maintenance from './pages/Maintenance';
@@ -52,8 +52,6 @@ function App() {
             
             {/* Moto Routes */}
             <Route path="/inventory" element={<AnimatedPage><Inventory /></AnimatedPage>} />
-            <Route path="/inventory/new" element={<AnimatedPage><InventoryNew /></AnimatedPage>} />
-            <Route path="/inventory/used" element={<AnimatedPage><InventoryUsed /></AnimatedPage>} />
             <Route path="/inventory/:vid" element={<AnimatedPage><BikeDetail /></AnimatedPage>} />
             
             <Route path="/rentals" element={<AnimatedPage><Rentals /></AnimatedPage>} />
@@ -88,6 +86,7 @@ function App() {
             <Route path="/accessories" element={<AnimatedPage><Accessories /></AnimatedPage>} />
             <Route path="/accessories/:id" element={<AnimatedPage><AccessoryDetail /></AnimatedPage>} />
             <Route path="/shop" element={<AnimatedPage><Shop /></AnimatedPage>} />
+            <Route path="/shop/gift-cards" element={<AnimatedPage><GiftCards /></AnimatedPage>} />
             <Route path="/shop/men" element={<ShopCategory category="men" title="Uomo" subtitle="APPAREL" />} />
             <Route path="/shop/women" element={<ShopCategory category="women" title="Donna" subtitle="APPAREL" />} />
             <Route path="/shop/helmets" element={<ShopCategory category="helmets" title="Caschi" subtitle="SAFETY" />} />
