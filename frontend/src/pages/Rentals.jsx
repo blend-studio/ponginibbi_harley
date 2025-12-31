@@ -145,7 +145,7 @@ const Rentals = () => {
       {/* CTA Footer */}
       <div className="bg-hd-orange text-white py-16 md:py-20 relative overflow-hidden">
         <div className="absolute top-0 right-0 p-4 opacity-10">
-            <img src="/images/ponginibbi-logo.png" className="w-64 md:w-96" alt="" />
+            <img src={`${import.meta.env.BASE_URL}images/ponginibbi-logo.png`} className="w-64 md:w-96" alt="" />
         </div>
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
             <h2 className="text-4xl md:text-5xl font-condensed font-bold uppercase mb-6">Pronto a Partire?</h2>

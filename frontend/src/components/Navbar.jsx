@@ -126,11 +126,11 @@ const Navbar = () => {
              {/* Logo Area */}
              <div className="flex items-center gap-3">
                <Link to="/">
-                 <img src="/images/ponginibbi-logo.png" alt="Ponginibbi" className="h-9 w-auto" />
+                 <img src={`${import.meta.env.BASE_URL}images/ponginibbi-logo.png`} alt="Ponginibbi" className="h-9 w-auto" />
                </Link>
                <div className="h-6 w-px bg-white/30 mx-1"></div>
                <div className="flex flex-col">
-                 <img src="/images/harley/2020-HDMC-horizon-wordmark CMYK-White.png" alt="Harley-Davidson" className="h-3 md:h-4 w-auto object-contain" />
+                 <img src={`${import.meta.env.BASE_URL}images/harley/2020-HDMC-horizon-wordmark CMYK-White.png`} alt="Harley-Davidson" className="h-3 md:h-4 w-auto object-contain" />
                </div>
              </div>
 

@@ -7,7 +7,7 @@ const Footer = () => {
         
         {/* Col 1: Brand & Social */}
         <div>
-          <img src="/images/ponginibbi-logo.png" alt="Ponginibbi" className="h-12 mb-4" />
+          <img src={`${import.meta.env.BASE_URL}images/ponginibbi-logo.png`} alt="Ponginibbi" className="h-12 mb-4" />
           <h3 className="font-condensed text-2xl font-bold text-white mb-2">PONGINIBBI GROUP</h3>
           <p className="text-gray-500 text-sm mb-6">
             Concessionaria ufficiale Harley-Davidson. Vivi il sogno americano a Piacenza.
@@ -62,7 +62,7 @@ const Footer = () => {
         <div>© 2025 Ponginibbi Group - P.IVA 12345678901 - All Rights Reserved.</div>
         <div className="flex items-center gap-4">
            <span>Official Dealer</span>
-           <img src="/images/harley/2021 H-D_BAR AND SHIELD_CMYK WHITE.png" alt="Harley-Davidson" className="h-10 md:h-12 w-auto opacity-90" />
+           <img src={`${import.meta.env.BASE_URL}images/harley/2021 H-D_BAR AND SHIELD_CMYK WHITE.png`} alt="Harley-Davidson" className="h-10 md:h-12 w-auto opacity-90" />
         </div>
       </div>
     </footer>

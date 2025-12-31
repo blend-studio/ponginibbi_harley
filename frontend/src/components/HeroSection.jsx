@@ -9,7 +9,7 @@ const HeroSection = () => {
       
       {/* BACKGROUND ANIMATO */}
       <div className="absolute inset-0 overflow-hidden">
-        <img src="/images/HARLEY2.jpg" alt="Background" className="w-full h-full object-cover opacity-60" />
+        <img src={`${import.meta.env.BASE_URL}images/HARLEY2.jpg`} alt="Background" className="w-full h-full object-cover opacity-60" />
         {/* Gradiente drammatico */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-transparent"></div>
