@@ -29,7 +29,7 @@ const Home = () => {
             <ScrollReveal>
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 px-2">
                     <div>
-                        <h2 className="text-outline text-5xl md:text-9xl font-condensed font-bold uppercase opacity-10 absolute -top-8 md:-top-16 left-0 select-none pointer-events-none">
+                        <h2 className="text-outline text-5xl md:text-9xl font-condensed font-bold uppercase opacity-10 absolute -top-8 md:-top-16 left-0 select-none pointer-events-none hidden md:block">
                             Garage
                         </h2>
                         <h2 className="text-white text-4xl md:text-7xl font-condensed font-bold uppercase relative z-10 leading-[0.9]">

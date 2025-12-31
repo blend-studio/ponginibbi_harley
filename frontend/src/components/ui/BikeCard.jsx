@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 const BikeCard = ({ bike }) => {
   return (
-    <div className="group relative w-full overflow-hidden bg-[#121212] border border-white/10 hover:border-hd-orange transition-all duration-500 flex flex-col">
+    <div className="group relative w-full overflow-visible bg-[#121212] border border-white/10 hover:border-hd-orange transition-all duration-500 flex flex-col">
       
       {/* AREA IMMAGINE (Sfondo Chiaro per integrare le foto studio) */}
       <div className="relative h-[220px] sm:h-[260px] md:h-[300px] bg-gradient-to-b from-gray-100 to-gray-300 overflow-hidden flex items-center justify-center p-4 clip-diagonal-reverse">
@@ -20,8 +20,8 @@ const BikeCard = ({ bike }) => {
         />
       </div>
       {/* Badge Status (spostato fuori dall'area clip per evitare che venga tagliato) */}
-      <div className="absolute top-4 right-4 z-30 bg-hd-orange text-white px-3 py-1.5 clip-slant shadow-[0_0_15px_rgba(255,102,0,0.4)] border border-white/20">
-        <span className="text-[11px] md:text-sm font-black uppercase tracking-[0.1em] drop-shadow-md">
+      <div className="absolute top-2 right-3 md:top-4 md:right-4 z-30 bg-hd-orange text-white px-2.5 md:px-3 py-1 md:py-1.5 clip-slant shadow-[0_0_15px_rgba(255,102,0,0.4)] border border-white/20">
+        <span className="text-[10px] md:text-sm font-black uppercase tracking-[0.08em] md:tracking-[0.12em] drop-shadow-md leading-none">
           {(bike.status || '2026').toString().toUpperCase()}
         </span>
       </div>

@@ -30,7 +30,7 @@ const TestRide = () => {
   }
 
   return (
-    <div className="bg-hd-dark min-h-screen pt-20 pb-20">
+    <div className="bg-hd-dark min-h-screen pt-28 md:pt-36 pb-20">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
             <h1 className="text-5xl md:text-7xl font-condensed font-bold text-white uppercase mb-4">

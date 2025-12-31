@@ -4,7 +4,7 @@ import { ArrowRight, ShoppingBag, Star, Tag } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const CategoryCard = ({ title, subtitle, image, link, size = 'normal' }) => (
-  <Link to={link} className={`group relative overflow-hidden cursor-pointer border border-white/10 block ${size === 'large' ? 'md:col-span-2 h-[600px]' : 'h-[600px] md:h-[600px]'}`}>
+  <Link to={link} className={`group relative overflow-hidden cursor-pointer border border-white/10 block ${size === 'large' ? 'md:col-span-2 h-64 sm:h-80 md:h-[600px]' : 'h-64 sm:h-80 md:h-[600px]'}`}>
     <img 
         src={image} 
         alt={title} 

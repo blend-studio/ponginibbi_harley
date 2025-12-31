@@ -175,7 +175,15 @@ const Inventory = () => {
             </div>
 
         </div>
-      </div>
+                {/* Mobile fixed filter button (falls back if header button is hidden) */}
+                <button
+                    onClick={() => setShowMobileFilters(true)}
+                    className="fixed bottom-6 right-4 z-50 lg:hidden bg-hd-orange text-white p-3 rounded-full shadow-lg flex items-center justify-center"
+                    aria-label="Apri filtri"
+                >
+                    <Filter size={18} />
+                </button>
+            </div>
     </div>
   );
 };

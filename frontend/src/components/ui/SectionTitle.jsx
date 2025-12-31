@@ -21,7 +21,7 @@ const SectionTitle = ({ title, subtitle, center = false }) => {
       )}
       <TextReveal 
         text={title} 
-        className={`font-condensed font-bold text-5xl md:text-7xl text-white uppercase leading-none ${center ? 'justify-center' : ''}`}
+        className={`font-condensed font-bold text-3xl sm:text-4xl md:text-7xl text-white uppercase leading-none ${center ? 'justify-center' : ''}`}
       />
     </div>
   );
