@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Inventory from './pages/Inventory';
+import InventoryNew from './pages/InventoryNew';
+import InventoryUsed from './pages/InventoryUsed';
 import BikeDetail from './pages/BikeDetail';
 import Accessories from './pages/Accessories';
 import AccessoryDetail from './pages/AccessoryDetail';
@@ -50,6 +52,8 @@ function App() {
             
             {/* Moto Routes */}
             <Route path="/inventory" element={<AnimatedPage><Inventory /></AnimatedPage>} />
+            <Route path="/inventory/new" element={<AnimatedPage><InventoryNew /></AnimatedPage>} />
+            <Route path="/inventory/used" element={<AnimatedPage><InventoryUsed /></AnimatedPage>} />
             <Route path="/inventory/:vid" element={<AnimatedPage><BikeDetail /></AnimatedPage>} />
             
             <Route path="/rentals" element={<AnimatedPage><Rentals /></AnimatedPage>} />
