@@ -75,25 +75,25 @@ const Shop = () => {
                 title="Uomo" 
                 subtitle="Nuova Collezione"
                 image="https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=2670&auto=format&fit=crop"
-                link="/shop/apparel?cat=men"
+                link="/shop/men"
              />
              <CategoryCard 
                 title="Donna" 
                 subtitle="Nuova Collezione"
                 image="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=2670&auto=format&fit=crop"
-                link="/shop/apparel?cat=women"
+                link="/shop/women"
              />
              <CategoryCard 
                 title="Caschi" 
                 subtitle="Sicurezza & Stile"
                 image="https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=2671&auto=format&fit=crop"
-                link="/shop/apparel?cat=helmets"
+                link="/shop/helmets"
              />
              <CategoryCard 
                 title="Accessori" 
                 subtitle="Parts & More"
                 image="https://images.unsplash.com/photo-1609630875171-b1321377ee53?q=80&w=2670&auto=format&fit=crop"
-                link="/parts-request"
+                link="/shop/accessories"
              />
         </div>
 

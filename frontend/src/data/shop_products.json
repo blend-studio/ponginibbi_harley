@@ -1,0 +1,68 @@
+[
+  {
+    "id": "m1",
+    "name": "Giacca in Pelle Willie G.",
+    "price": "650,00",
+    "category": "men",
+    "image": "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=2670&auto=format&fit=crop",
+    "tag": "New"
+  },
+  {
+    "id": "m2",
+    "name": "T-Shirt Eagle",
+    "price": "45,00",
+    "category": "men",
+    "image": "https://images.unsplash.com/photo-1558980394-0a06c46e60e7?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    "id": "m3",
+    "name": "Gilet in Pelle Club",
+    "price": "320,00",
+    "category": "men",
+    "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    "id": "w1",
+    "name": "Felpa Bar & Shield",
+    "price": "120,00",
+    "category": "women",
+    "image": "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=2670&auto=format&fit=crop",
+    "tag": "Best Seller"
+  },
+  {
+    "id": "w2",
+    "name": "Giacca Mesh Estiva",
+    "price": "280,00",
+    "category": "women",
+    "image": "https://images.unsplash.com/photo-1609630875171-b1321377ee53?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    "id": "h1",
+    "name": "Casco Pilot 3-in-1",
+    "price": "350,00",
+    "category": "helmets",
+    "image": "https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=2671&auto=format&fit=crop",
+    "tag": "Icon"
+  },
+  {
+    "id": "h2",
+    "name": "Casco Integrale Carbon",
+    "price": "550,00",
+    "category": "helmets",
+    "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    "id": "a1",
+    "name": "Borsa Laterale Pelle",
+    "price": "199,00",
+    "category": "accessories",
+    "image": "https://images.unsplash.com/photo-1609630875171-b1321377ee53?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    "id": "a2",
+    "name": "Guanti in Pelle",
+    "price": "85,00",
+    "category": "accessories",
+    "image": "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=2670&auto=format&fit=crop"
+  }
+]

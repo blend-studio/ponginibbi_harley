@@ -34,6 +34,7 @@ import Gallery from './pages/Gallery';
 import News from './pages/News';
 import ServiceOffers from './pages/ServiceOffers';
 import ExpressLane from './pages/ExpressLane';
+import ShopCategory from './pages/ShopCategory';
 
 function App() {
   const location = useLocation();
@@ -82,6 +83,10 @@ function App() {
             <Route path="/accessories" element={<AnimatedPage><Accessories /></AnimatedPage>} />
             <Route path="/accessories/:id" element={<AnimatedPage><AccessoryDetail /></AnimatedPage>} />
             <Route path="/shop" element={<AnimatedPage><Shop /></AnimatedPage>} />
+            <Route path="/shop/men" element={<ShopCategory category="men" title="Uomo" subtitle="APPAREL" />} />
+            <Route path="/shop/women" element={<ShopCategory category="women" title="Donna" subtitle="APPAREL" />} />
+            <Route path="/shop/helmets" element={<ShopCategory category="helmets" title="Caschi" subtitle="SAFETY" />} />
+            <Route path="/shop/accessories" element={<ShopCategory category="accessories" title="Accessori" subtitle="LIFESTYLE" />} />
             <Route path="/shop/gift-cards" element={<SimplePage title="Gift Cards" subtitle="REGALA UN SOGNO" image="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060"><p>Le Gift Card Harley-Davidson sono il regalo perfetto per ogni appassionato.</p></SimplePage>} />
             <Route path="/parts" element={<AnimatedPage><PartsRequest /></AnimatedPage>} />
             <Route path="/shop/apparel" element={<AnimatedPage><Shop /></AnimatedPage>} />
