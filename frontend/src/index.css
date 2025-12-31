@@ -68,7 +68,7 @@ body {
 
   /* Bottone inclinato (Parallelogramma) */
   .clip-slant {
-    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+    clip-path: polygon(30px 0, 100% 0, calc(100% - 30px) 100%, 0% 100%);
   }
   
   /* Card con angolo tagliato (stile Cyberpunk/Industrial) */
