@@ -25,7 +25,7 @@ const FinanceOption = ({ title, subtitle, features, recommended }) => (
     </ul>
     <Link 
         to="/finance/request" 
-        className={`w-full text-center border py-3 font-condensed font-bold uppercase transition-all clip-slant text-sm md:text-base ${recommended ? 'bg-hd-orange border-hd-orange text-white hover:bg-white hover:text-black hover:border-white' : 'border-white text-white hover:bg-white hover:text-black'}`}
+        className={`w-full text-center border py-3 font-condensed font-bold uppercase transition-all clip-slant text-sm md:text-base ${recommended ? 'bg-hd-orange border-hd-orange text-white hover:bg-white hover:text-black hover:border-white' : 'bg-white text-black border-white hover:bg-hd-orange hover:text-white'}`}
     >
         Richiedi Info
     </Link>
