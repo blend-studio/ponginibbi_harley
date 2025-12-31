@@ -43,6 +43,28 @@
     "image": "https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?q=80&w=2609&auto=format&fit=crop"
   },
   {
+    "id": "m7",
+    "name": "Jeans Tecnici Kevlar",
+    "price": "249,00",
+    "category": "men",
+    "image": "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    "id": "m8",
+    "name": "Giacca Tessuto 4-Stagioni",
+    "price": "450,00",
+    "category": "men",
+    "image": "https://images.unsplash.com/photo-1559563458-52c69c8e30e4?q=80&w=2670&auto=format&fit=crop",
+    "tag": "Versatile"
+  },
+  {
+    "id": "m9",
+    "name": "T-Shirt Vintage Dealer",
+    "price": "55,00",
+    "category": "men",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2680&auto=format&fit=crop"
+  },
+  {
     "id": "w1",
     "name": "Felpa Bar & Shield",
     "price": "120,00",
@@ -80,6 +102,27 @@
     "image": "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=2670&auto=format&fit=crop"
   },
   {
+    "id": "w6",
+    "name": "Leggings Moto Rinforzati",
+    "price": "180,00",
+    "category": "women",
+    "image": "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?q=80&w=2669&auto=format&fit=crop"
+  },
+  {
+    "id": "w7",
+    "name": "Stivaletti Pelle Zip",
+    "price": "195,00",
+    "category": "women",
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=2680&auto=format&fit=crop"
+  },
+  {
+    "id": "w8",
+    "name": "Camicia Denim Ricamata",
+    "price": "95,00",
+    "category": "women",
+    "image": "https://images.unsplash.com/photo-1529139574466-a302d2052574?q=80&w=2687&auto=format&fit=crop"
+  },
+  {
     "id": "h1",
     "name": "Casco Pilot 3-in-1",
     "price": "350,00",
@@ -107,6 +150,21 @@
     "price": "390,00",
     "category": "helmets",
     "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    "id": "h5",
+    "name": "Casco Off-Road Adventure",
+    "price": "420,00",
+    "category": "helmets",
+    "image": "https://images.unsplash.com/photo-1626244243670-3d4452093557?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    "id": "h6",
+    "name": "Casco Mezzo Scodella",
+    "price": "150,00",
+    "category": "helmets",
+    "image": "https://images.unsplash.com/photo-1589756823695-278bc923f962?q=80&w=2670&auto=format&fit=crop",
+    "tag": "Summer"
   },
   {
     "id": "a1",
@@ -142,5 +200,27 @@
     "price": "95,00",
     "category": "accessories",
     "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop"
+  },
+  {
+    "id": "a6",
+    "name": "Zaino Impermeabile",
+    "price": "140,00",
+    "category": "accessories",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=2687&auto=format&fit=crop"
+  },
+  {
+    "id": "a7",
+    "name": "Orologio Cronografo H-D",
+    "price": "299,00",
+    "category": "accessories",
+    "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=2599&auto=format&fit=crop",
+    "tag": "Limited"
+  },
+  {
+    "id": "a8",
+    "name": "Bandana Tubolare Buff",
+    "price": "25,00",
+    "category": "accessories",
+    "image": "https://images.unsplash.com/photo-1574701148212-851804935af7?q=80&w=2574&auto=format&fit=crop"
   }
 ]
