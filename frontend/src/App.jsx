@@ -38,6 +38,7 @@ import ServiceOffers from './pages/ServiceOffers';
 import ExpressLane from './pages/ExpressLane';
 import ShopCategory from './pages/ShopCategory';
 import ShopOffers from './pages/ShopOffers';
+import InventoryView from './pages/InventoryView';
 
 function App() {
   const location = useLocation();
@@ -52,6 +53,8 @@ function App() {
             
             {/* Moto Routes */}
             <Route path="/inventory" element={<AnimatedPage><Inventory /></AnimatedPage>} />
+            <Route path="/inventory/new" element={<InventoryView type="new" title="Motociclette Nuove" subtitle="GAMMA 2025/2026" />} />
+            <Route path="/inventory/used" element={<InventoryView type="used" title="Usato Garantito" subtitle="CERTIFIED PRE-OWNED" />} />
             <Route path="/inventory/:vid" element={<AnimatedPage><BikeDetail /></AnimatedPage>} />
             
             <Route path="/rentals" element={<AnimatedPage><Rentals /></AnimatedPage>} />

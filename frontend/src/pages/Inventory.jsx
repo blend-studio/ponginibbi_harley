@@ -10,7 +10,8 @@ const Inventory = () => {
   const [bikes, setBikes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
-    const [filterModelYearCurrent, setFilterModelYearCurrent] = useState(false);
+        const [filterModelYearCurrent, setFilterModelYearCurrent] = useState(false);
+        const [filterStatus, setFilterStatus] = useState({ new: false, used: false, demo: false });
 
     // Catalog loaded from frontend/src/data/motorcycles.json
 
@@ -66,15 +67,30 @@ const Inventory = () => {
                         <label className="block text-gray-400 text-sm mb-2 font-bold uppercase tracking-wider">Stato</label>
                         <div className="flex flex-col gap-3">
                             <label className="flex items-center text-white text-sm cursor-pointer group">
-                                <input type="checkbox" className="mr-3 w-4 h-4 accent-hd-orange" /> 
+                                <input
+                                    type="checkbox"
+                                    checked={filterStatus.new}
+                                    onChange={() => setFilterStatus(prev => ({ ...prev, new: !prev.new }))}
+                                    className="mr-3 w-4 h-4 accent-hd-orange"
+                                /> 
                                 <span className="group-hover:text-hd-orange transition-colors">Nuovo</span>
                             </label>
                             <label className="flex items-center text-white text-sm cursor-pointer group">
-                                <input type="checkbox" className="mr-3 w-4 h-4 accent-hd-orange" /> 
+                                <input
+                                    type="checkbox"
+                                    checked={filterStatus.used}
+                                    onChange={() => setFilterStatus(prev => ({ ...prev, used: !prev.used }))}
+                                    className="mr-3 w-4 h-4 accent-hd-orange"
+                                /> 
                                 <span className="group-hover:text-hd-orange transition-colors">Usato</span>
                             </label>
                             <label className="flex items-center text-white text-sm cursor-pointer group">
-                                <input type="checkbox" className="mr-3 w-4 h-4 accent-hd-orange" /> 
+                                <input
+                                    type="checkbox"
+                                    checked={filterStatus.demo}
+                                    onChange={() => setFilterStatus(prev => ({ ...prev, demo: !prev.demo }))}
+                                    className="mr-3 w-4 h-4 accent-hd-orange"
+                                /> 
                                 <span className="group-hover:text-hd-orange transition-colors">Demo</span>
                             </label>
                         </div>
@@ -121,6 +137,19 @@ const Inventory = () => {
                                                     const regYear = b.registrationDate ? new Date(b.registrationDate).getFullYear() : null;
                                                     if (regYear !== currentYear) return false;
                                                 }
+
+                                                // Stato filtering: se almeno uno selezionato, mantieni solo quelli che matchano
+                                                const activeStatuses = [];
+                                                if (filterStatus.new) activeStatuses.push('new', 'nuovo');
+                                                if (filterStatus.used) activeStatuses.push('used', 'usato');
+                                                if (filterStatus.demo) activeStatuses.push('demo');
+
+                                                if (activeStatuses.length > 0) {
+                                                    const statusStr = (b.status || b.Stato || '').toString().toLowerCase();
+                                                    const matches = activeStatuses.some(s => statusStr.includes(s));
+                                                    if (!matches) return false;
+                                                }
+
                                                 return true;
                                             });
 

@@ -13,16 +13,17 @@ const BikeCard = ({ bike }) => {
           {bike.model.split(' ')[0]}
         </h3>
 
-        <img 
-            src={bike.image} 
-            alt={bike.model} 
-            className="relative z-10 w-full h-auto max-h-[85%] object-contain transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-2 drop-shadow-2xl"
+        <img
+          src={bike.image}
+          alt={bike.model}
+          className="relative z-10 w-full h-auto max-h-[85%] object-contain transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-2 drop-shadow-2xl"
         />
-        
-        {/* Badge Status */}
-        <div className="absolute top-4 right-4 z-20 bg-hd-orange/90 backdrop-blur text-white px-2 md:px-3 py-1 clip-slant">
-            <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest">{bike.status || '2026'}</span>
-        </div>
+      </div>
+      {/* Badge Status (spostato fuori dall'area clip per evitare che venga tagliato) */}
+      <div className="absolute top-4 right-4 z-30 bg-hd-orange text-white px-3 py-1.5 clip-slant shadow-[0_0_15px_rgba(255,102,0,0.4)] border border-white/20">
+        <span className="text-[11px] md:text-sm font-black uppercase tracking-[0.1em] drop-shadow-md">
+          {(bike.status || '2026').toString().toUpperCase()}
+        </span>
       </div>
 
       {/* AREA CONTENUTO (Dark) */}

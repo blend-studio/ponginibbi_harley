@@ -9,7 +9,9 @@ const NAV_ITEMS = [
     name: 'MOTO',
     path: '/inventory',
     submenu: [
-      { name: 'Inventario', path: '/inventory/' },
+      { name: 'Tutto lo Stock', path: '/inventory' },
+      { name: 'Motociclette Nuove', path: '/inventory/new' },
+      { name: 'Usato Garantito', path: '/inventory/used' },
       { name: 'Noleggia una motocicletta', path: '/rentals', submenu: [
           { name: 'Prenotazione online', path: '/rentals/booking' }
       ]},
