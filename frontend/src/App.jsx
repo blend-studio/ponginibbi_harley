@@ -35,6 +35,7 @@ import News from './pages/News';
 import ServiceOffers from './pages/ServiceOffers';
 import ExpressLane from './pages/ExpressLane';
 import ShopCategory from './pages/ShopCategory';
+import ShopOffers from './pages/ShopOffers';
 
 function App() {
   const location = useLocation();
@@ -90,7 +91,7 @@ function App() {
             <Route path="/shop/gift-cards" element={<SimplePage title="Gift Cards" subtitle="REGALA UN SOGNO" image="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060"><p>Le Gift Card Harley-Davidson sono il regalo perfetto per ogni appassionato.</p></SimplePage>} />
             <Route path="/parts" element={<AnimatedPage><PartsRequest /></AnimatedPage>} />
             <Route path="/shop/apparel" element={<AnimatedPage><Shop /></AnimatedPage>} />
-            <Route path="/shop/offers" element={<SimplePage title="Offerte Shop" subtitle="SALDI" image="https://img.freepik.com/free-photo/biking-motorcycle-forest_114579-5198.jpg?t=st=1767091041~exp=1767094641~hmac=eb78590e36e9afcf912609ca73db90bf1d5797444838d34653c3727d46844717&w=1060"><p>Scopri le offerte su abbigliamento e accessori.</p></SimplePage>} />
+            <Route path="/shop/offers" element={<AnimatedPage><ShopOffers /></AnimatedPage>} />
 
             {/* Events Routes */}
             <Route path="/events" element={<AnimatedPage><Events /></AnimatedPage>} />
