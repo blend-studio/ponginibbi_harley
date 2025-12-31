@@ -1,226 +1,125 @@
 [
-  {
-    "id": "m1",
-    "name": "Giacca in Pelle Willie G.",
-    "price": "650,00",
-    "category": "men",
-    "image": "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=2670&auto=format&fit=crop",
-    "tag": "New"
-  },
-  {
-    "id": "m2",
-    "name": "T-Shirt Eagle",
-    "price": "45,00",
-    "category": "men",
-    "image": "https://images.unsplash.com/photo-1558980394-0a06c46e60e7?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "m3",
-    "name": "Gilet in Pelle Club",
-    "price": "320,00",
-    "category": "men",
-    "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "m4",
-    "name": "Camicia a Scacchi Flannel",
-    "price": "89,00",
-    "category": "men",
-    "image": "https://images.unsplash.com/photo-1520975661595-6453be3f7070?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "m5",
-    "name": "Felpa con Cappuccio Logo",
-    "price": "110,00",
-    "category": "men",
-    "image": "https://images.unsplash.com/photo-1609630875171-b1321377ee53?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "m6",
-    "name": "Stivali da Moto Riding",
-    "price": "210,00",
-    "category": "men",
-    "image": "https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?q=80&w=2609&auto=format&fit=crop"
-  },
-  {
-    "id": "m7",
-    "name": "Jeans Tecnici Kevlar",
-    "price": "249,00",
-    "category": "men",
-    "image": "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "m8",
-    "name": "Giacca Tessuto 4-Stagioni",
-    "price": "450,00",
-    "category": "men",
-    "image": "https://images.unsplash.com/photo-1559563458-52c69c8e30e4?q=80&w=2670&auto=format&fit=crop",
-    "tag": "Versatile"
-  },
-  {
-    "id": "m9",
-    "name": "T-Shirt Vintage Dealer",
-    "price": "55,00",
-    "category": "men",
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2680&auto=format&fit=crop"
-  },
-  {
-    "id": "w1",
-    "name": "Felpa Bar & Shield",
-    "price": "120,00",
-    "category": "women",
-    "image": "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=2670&auto=format&fit=crop",
-    "tag": "Best Seller"
-  },
-  {
-    "id": "w2",
-    "name": "Giacca Mesh Estiva",
-    "price": "280,00",
-    "category": "women",
-    "image": "https://images.unsplash.com/photo-1609630875171-b1321377ee53?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "w3",
-    "name": "T-Shirt Vintage Logo",
-    "price": "40,00",
-    "category": "women",
-    "image": "https://images.unsplash.com/photo-1558980394-0a06c46e60e7?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "w4",
-    "name": "Giubbotto Pelle Miss Enthusiast",
-    "price": "590,00",
-    "category": "women",
-    "image": "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=2670&auto=format&fit=crop",
-    "tag": "New"
-  },
-  {
-    "id": "w5",
-    "name": "Canotta Racerback",
-    "price": "35,00",
-    "category": "women",
-    "image": "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "w6",
-    "name": "Leggings Moto Rinforzati",
-    "price": "180,00",
-    "category": "women",
-    "image": "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?q=80&w=2669&auto=format&fit=crop"
-  },
-  {
-    "id": "w7",
-    "name": "Stivaletti Pelle Zip",
-    "price": "195,00",
-    "category": "women",
-    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=2680&auto=format&fit=crop"
-  },
-  {
-    "id": "w8",
-    "name": "Camicia Denim Ricamata",
-    "price": "95,00",
-    "category": "women",
-    "image": "https://images.unsplash.com/photo-1529139574466-a302d2052574?q=80&w=2687&auto=format&fit=crop"
-  },
-  {
-    "id": "h1",
-    "name": "Casco Pilot 3-in-1",
-    "price": "350,00",
-    "category": "helmets",
-    "image": "https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=2671&auto=format&fit=crop",
-    "tag": "Icon"
-  },
-  {
-    "id": "h2",
-    "name": "Casco Integrale Carbon",
-    "price": "550,00",
-    "category": "helmets",
-    "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "h3",
-    "name": "Casco Jet Vintage",
-    "price": "220,00",
-    "category": "helmets",
-    "image": "https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=2671&auto=format&fit=crop"
-  },
-  {
-    "id": "h4",
-    "name": "Casco Modulare Capstone",
-    "price": "390,00",
-    "category": "helmets",
-    "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "h5",
-    "name": "Casco Off-Road Adventure",
-    "price": "420,00",
-    "category": "helmets",
-    "image": "https://images.unsplash.com/photo-1626244243670-3d4452093557?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "h6",
-    "name": "Casco Mezzo Scodella",
-    "price": "150,00",
-    "category": "helmets",
-    "image": "https://images.unsplash.com/photo-1589756823695-278bc923f962?q=80&w=2670&auto=format&fit=crop",
-    "tag": "Summer"
-  },
-  {
-    "id": "a1",
-    "name": "Borsa Laterale Pelle",
-    "price": "199,00",
-    "category": "accessories",
-    "image": "https://images.unsplash.com/photo-1609630875171-b1321377ee53?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "a2",
-    "name": "Guanti in Pelle",
-    "price": "85,00",
-    "category": "accessories",
-    "image": "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "a3",
-    "name": "Cappellino Trucker H-D",
-    "price": "35,00",
-    "category": "accessories",
-    "image": "https://images.unsplash.com/photo-1558980394-0a06c46e60e7?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "a4",
-    "name": "Cintura Fibbia Skull",
-    "price": "75,00",
-    "category": "accessories",
-    "image": "https://images.unsplash.com/photo-1520975661595-6453be3f7070?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "a5",
-    "name": "Portafoglio Pelle con Catena",
-    "price": "95,00",
-    "category": "accessories",
-    "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop"
-  },
-  {
-    "id": "a6",
-    "name": "Zaino Impermeabile",
-    "price": "140,00",
-    "category": "accessories",
-    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=2687&auto=format&fit=crop"
-  },
-  {
-    "id": "a7",
-    "name": "Orologio Cronografo H-D",
-    "price": "299,00",
-    "category": "accessories",
-    "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=2599&auto=format&fit=crop",
-    "tag": "Limited"
-  },
-  {
-    "id": "a8",
-    "name": "Bandana Tubolare Buff",
-    "price": "25,00",
-    "category": "accessories",
-    "image": "https://images.unsplash.com/photo-1574701148212-851804935af7?q=80&w=2574&auto=format&fit=crop"
-  }
+  { "id": "m1", "name": "Giacca in Pelle Willie G.", "price": "650,00", "category": "men", "image": "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?auto=format&fit=crop&w=800", "tag": "New" },
+  { "id": "m2", "name": "T-Shirt Eagle", "price": "45,00", "category": "men", "image": "https://images.unsplash.com/photo-1558980394-0a06c46e60e7?auto=format&fit=crop&w=800" },
+  { "id": "m3", "name": "Gilet in Pelle Club", "price": "320,00", "category": "men", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "m4", "name": "Camicia a Scacchi Flannel", "price": "89,00", "category": "men", "image": "https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=800" },
+  { "id": "m5", "name": "Felpa con Cappuccio Logo", "price": "110,00", "category": "men", "image": "https://images.unsplash.com/photo-1609630875171-b1321377ee53?auto=format&fit=crop&w=800" },
+  { "id": "m6", "name": "Stivali da Moto Riding", "price": "210,00", "category": "men", "image": "https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?auto=format&fit=crop&w=800" },
+  { "id": "m7", "name": "Jeans Tecnici Kevlar", "price": "249,00", "category": "men", "image": "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?auto=format&fit=crop&w=800" },
+  { "id": "m8", "name": "Giacca Tessuto 4-Stagioni", "price": "450,00", "category": "men", "image": "https://images.unsplash.com/photo-1559563458-52c69c8e30e4?auto=format&fit=crop&w=800", "tag": "Versatile" },
+  { "id": "m9", "name": "T-Shirt Vintage Dealer", "price": "55,00", "category": "men", "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800" },
+  { "id": "m10", "name": "Guanti Estivi Mesh", "price": "65,00", "category": "men", "image": "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?auto=format&fit=crop&w=800" },
+  { "id": "m11", "name": "Maglia Tecnica Baselayer", "price": "75,00", "category": "men", "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800" },
+  { "id": "m12", "name": "Giacca Denim rinforzata", "price": "180,00", "category": "men", "image": "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?auto=format&fit=crop&w=800" },
+  { "id": "m13", "name": "Pantaloni Pelle Custom", "price": "390,00", "category": "men", "image": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800" },
+  { "id": "m14", "name": "Polo Logo Ricamato", "price": "60,00", "category": "men", "image": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=800" },
+  { "id": "m15", "name": "Smanicato Down Jacket", "price": "145,00", "category": "men", "image": "https://images.unsplash.com/photo-1559551409-dadc959f76b8?auto=format&fit=crop&w=800" },
+  { "id": "m16", "name": "Stivali Waterproof Adventure", "price": "280,00", "category": "men", "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800" },
+  { "id": "m17", "name": "Guanti Invernali Termici", "price": "120,00", "category": "men", "image": "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=800" },
+  { "id": "m18", "name": "Cintura Pelle Bar & Shield", "price": "55,00", "category": "men", "image": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=800" },
+  { "id": "m19", "name": "Cappello Lana Beanie", "price": "30,00", "category": "men", "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800" },
+  { "id": "m20", "name": "Calze Performance Rider", "price": "20,00", "category": "men", "image": "https://images.unsplash.com/photo-1582967702047-1110d238a09e?auto=format&fit=crop&w=800" },
+  { "id": "m21", "name": "Occhiali Performance", "price": "145,00", "category": "men", "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800" },
+  { "id": "m22", "name": "Bandana Skull Collection", "price": "18,00", "category": "men", "image": "https://images.unsplash.com/photo-1574701148212-851804935af7?auto=format&fit=crop&w=800" },
+  { "id": "m23", "name": "Portafoglio Biker Catena", "price": "85,00", "category": "men", "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800" },
+  { "id": "m24", "name": "Orologio Bulova x H-D", "price": "350,00", "category": "men", "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800" },
+  { "id": "m25", "name": "Giacca Pelle Retro", "price": "720,00", "category": "men", "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800" },
+  { "id": "m26", "name": "Felpa Zip Midnight", "price": "130,00", "category": "men", "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800" },
+  { "id": "m27", "name": "T-Shirt 120th Anniversary", "price": "65,00", "category": "men", "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800" },
+  { "id": "m28", "name": "Jeans Cargo Moto", "price": "190,00", "category": "men", "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800" },
+  { "id": "m29", "name": "Sottotuta Termico", "price": "95,00", "category": "men", "image": "https://images.unsplash.com/photo-1521577352347-98841639f97a?auto=format&fit=crop&w=800" },
+  { "id": "m30", "name": "Impermeabile Packable", "price": "115,00", "category": "men", "image": "https://images.unsplash.com/photo-1544923246-77307dd654ca?auto=format&fit=crop&w=800" },
+
+  { "id": "w1", "name": "Felpa Bar & Shield", "price": "120,00", "category": "women", "image": "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?auto=format&fit=crop&w=800", "tag": "Best Seller" },
+  { "id": "w2", "name": "Giacca Mesh Estiva", "price": "280,00", "category": "women", "image": "https://images.unsplash.com/photo-1609630875171-b1321377ee53?auto=format&fit=crop&w=800" },
+  { "id": "w3", "name": "T-Shirt Vintage Logo", "price": "40,00", "category": "women", "image": "https://images.unsplash.com/photo-1558980394-0a06c46e60e7?auto=format&fit=crop&w=800" },
+  { "id": "w4", "name": "Giubbotto Pelle Miss Enthusiast", "price": "590,00", "category": "women", "image": "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?auto=format&fit=crop&w=800", "tag": "New" },
+  { "id": "w5", "name": "Canotta Racerback", "price": "35,00", "category": "women", "image": "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?auto=format&fit=crop&w=800" },
+  { "id": "w6", "name": "Leggings Moto Rinforzati", "price": "180,00", "category": "women", "image": "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?auto=format&fit=crop&w=800" },
+  { "id": "w7", "name": "Stivaletti Pelle Zip", "price": "195,00", "category": "women", "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800" },
+  { "id": "w8", "name": "Camicia Denim Ricamata", "price": "95,00", "category": "women", "image": "https://images.unsplash.com/photo-1529139574466-a302d2052574?auto=format&fit=crop&w=800" },
+  { "id": "w9", "name": "Giacca Pelle Biker Classic", "price": "480,00", "category": "women", "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800" },
+  { "id": "w10", "name": "Guanti Donna Full-Finger", "price": "75,00", "category": "women", "image": "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=800" },
+  { "id": "w11", "name": "Top Smanicato Studded", "price": "45,00", "category": "women", "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800" },
+  { "id": "w12", "name": "Jeans Slim Fit rinforzati", "price": "165,00", "category": "women", "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800" },
+  { "id": "w13", "name": "Bandana Silk Collection", "price": "28,00", "category": "women", "image": "https://images.unsplash.com/photo-1574701148212-851804935af7?auto=format&fit=crop&w=800" },
+  { "id": "w14", "name": "Borsa Pelle a Tracolla", "price": "145,00", "category": "women", "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800" },
+  { "id": "w15", "name": "Occhiali Women Rider", "price": "130,00", "category": "women", "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800" },
+  { "id": "w16", "name": "Giacca Tessuto Adventure", "price": "390,00", "category": "women", "image": "https://images.unsplash.com/photo-1544923246-77307dd654ca?auto=format&fit=crop&w=800" },
+  { "id": "w17", "name": "Berretto Crystal Logo", "price": "35,00", "category": "women", "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800" },
+  { "id": "w18", "name": "Gilet Pelle Soft-Shell", "price": "220,00", "category": "women", "image": "https://images.unsplash.com/photo-1559551409-dadc959f76b8?auto=format&fit=crop&w=800" },
+  { "id": "w19", "name": "Camicia Quadri Rose", "price": "75,00", "category": "women", "image": "https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=800" },
+  { "id": "w20", "name": "Calze Termiche Donna", "price": "22,00", "category": "women", "image": "https://images.unsplash.com/photo-1582967702047-1110d238a09e?auto=format&fit=crop&w=800" },
+  { "id": "w21", "name": "Bracciale Bar & Shield", "price": "85,00", "category": "women", "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800" },
+  { "id": "w22", "name": "Collana Silver Wing", "price": "110,00", "category": "women", "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800" },
+  { "id": "w23", "name": "Giacca Impermeabile Donna", "price": "130,00", "category": "women", "image": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=800" },
+  { "id": "w24", "name": "Pantaloni Pelle Stretch", "price": "340,00", "category": "women", "image": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800" },
+  { "id": "w25", "name": "Stivali Alti Harness", "price": "245,00", "category": "women", "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800" },
+  { "id": "w26", "name": "T-Shirt Open Road", "price": "42,00", "category": "women", "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800" },
+  { "id": "w27", "name": "Sottotuta Comfort", "price": "80,00", "category": "women", "image": "https://images.unsplash.com/photo-1521577352347-98841639f97a?auto=format&fit=crop&w=800" },
+  { "id": "w28", "name": "Giacca Pelle Heritage", "price": "550,00", "category": "women", "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800" },
+  { "id": "w29", "name": "Felpa con Zip Graphic", "price": "115,00", "category": "women", "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800" },
+  { "id": "w30", "name": "Canotta Logo 1903", "price": "38,00", "category": "women", "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800" },
+
+  { "id": "h1", "name": "Casco Pilot 3-in-1", "price": "350,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&w=800", "tag": "Icon" },
+  { "id": "h2", "name": "Casco Integrale Carbon", "price": "550,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "h3", "name": "Casco Jet Vintage", "price": "220,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&w=800" },
+  { "id": "h4", "name": "Casco Modulare Capstone", "price": "390,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "h5", "name": "Casco Off-Road Adventure", "price": "420,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1626244243670-3d4452093557?auto=format&fit=crop&w=800" },
+  { "id": "h6", "name": "Casco Mezzo Scodella", "price": "150,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1589756823695-278bc923f962?auto=format&fit=crop&w=800", "tag": "Summer" },
+  { "id": "h7", "name": "Casco Integrale Racing", "price": "490,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=800" },
+  { "id": "h8", "name": "Casco Jet Chrome", "price": "280,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&w=800" },
+  { "id": "h9", "name": "Casco Modulare Pro", "price": "450,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "h10", "name": "Casco Jet Skull Logo", "price": "195,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&w=800" },
+  { "id": "h11", "name": "Casco Integrale Gloss Black", "price": "320,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1589756823695-278bc923f962?auto=format&fit=crop&w=800" },
+  { "id": "h12", "name": "Casco Jet Matte Gray", "price": "210,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&w=800" },
+  { "id": "h13", "name": "Casco Modulare Bluetooth", "price": "580,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "h14", "name": "Casco Jet 120th Anniversary", "price": "310,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&w=800" },
+  { "id": "h15", "name": "Casco Integrale Aero", "price": "460,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=800" },
+  { "id": "h16", "name": "Casco Jet Retro Orange", "price": "235,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1589756823695-278bc923f962?auto=format&fit=crop&w=800" },
+  { "id": "h17", "name": "Casco Modulare Lite", "price": "360,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "h18", "name": "Casco Jet Gold Leaf", "price": "275,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&w=800" },
+  { "id": "h19", "name": "Casco Integrale Stealth", "price": "410,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=800" },
+  { "id": "h20", "name": "Casco Jet Urban Rider", "price": "185,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1589756823695-278bc923f962?auto=format&fit=crop&w=800" },
+  { "id": "h21", "name": "Casco Modulare Touring", "price": "520,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "h22", "name": "Casco Jet Classic White", "price": "195,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&w=800" },
+  { "id": "h23", "name": "Casco Integrale Graphic", "price": "385,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=800" },
+  { "id": "h24", "name": "Casco Jet Sun Shield", "price": "245,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1589756823695-278bc923f962?auto=format&fit=crop&w=800" },
+  { "id": "h25", "name": "Casco Modulare High-Viz", "price": "480,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "h26", "name": "Casco Jet Leather Wrapped", "price": "320,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&w=800" },
+  { "id": "h27", "name": "Casco Integrale Limited Ed.", "price": "650,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=800" },
+  { "id": "h28", "name": "Casco Jet Silver Star", "price": "215,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1589756823695-278bc923f962?auto=format&fit=crop&w=800" },
+  { "id": "h29", "name": "Casco Modulare Carbon Mix", "price": "590,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "h30", "name": "Casco Jet Bobber Style", "price": "180,00", "category": "helmets", "image": "https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?auto=format&fit=crop&w=800" },
+
+  { "id": "a1", "name": "Borsa Laterale Pelle", "price": "199,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1609630875171-b1321377ee53?auto=format&fit=crop&w=800" },
+  { "id": "a2", "name": "Guanti in Pelle", "price": "85,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558980394-4c7c9299fe96?auto=format&fit=crop&w=800" },
+  { "id": "a3", "name": "Cappellino Trucker H-D", "price": "35,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558980394-0a06c46e60e7?auto=format&fit=crop&w=800" },
+  { "id": "a4", "name": "Cintura Fibbia Skull", "price": "75,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=800" },
+  { "id": "a5", "name": "Portafoglio Pelle con Catena", "price": "95,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a6", "name": "Zaino Impermeabile", "price": "140,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800" },
+  { "id": "a7", "name": "Orologio Cronografo H-D", "price": "299,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800", "tag": "Limited" },
+  { "id": "a8", "name": "Bandana Tubolare Buff", "price": "25,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1574701148212-851804935af7?auto=format&fit=crop&w=800" },
+  { "id": "a9", "name": "Occhiali da Sole Aviator", "price": "120,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800" },
+  { "id": "a10", "name": "Portachiavi Leather Bar", "price": "15,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800" },
+  { "id": "a11", "name": "Guanti Pelle Touchscreen", "price": "95,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=800" },
+  { "id": "a12", "name": "Borsa Sella Posteriore", "price": "180,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800" },
+  { "id": "a13", "name": "Kit Pulizia Originale", "price": "45,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800" },
+  { "id": "a14", "name": "Mantenitore Carica", "price": "65,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1619641782842-83d244a2174d?auto=format&fit=crop&w=800" },
+  { "id": "a15", "name": "Lucchetto Disco Freno", "price": "89,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800" },
+  { "id": "a16", "name": "Specchietti Custom Black", "price": "145,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a17", "name": "Cover Primaria Skull", "price": "110,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a18", "name": "Manopole Riscaldate", "price": "220,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a19", "name": "Tappo Serbatoio Lock", "price": "55,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a20", "name": "Faro LED Daymaker", "price": "450,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a21", "name": "Frecce LED Micro", "price": "130,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a22", "name": "Borsa Serbatoio Mag", "price": "95,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800" },
+  { "id": "a23", "name": "Supporto Smartphone", "price": "55,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800" },
+  { "id": "a24", "name": "Sissy Bar Detachable", "price": "280,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a25", "name": "Portapacchi Solo", "price": "145,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a26", "name": "Manubrio Ape Hanger", "price": "310,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a27", "name": "Pedane Highway", "price": "165,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a28", "name": "Cavi Candela Orange", "price": "45,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a29", "name": "Kit Filtro Aria Screamin", "price": "380,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" },
+  { "id": "a30", "name": "Scarichi Street Cannon", "price": "950,00", "category": "accessories", "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800" }
 ]
