@@ -58,7 +58,7 @@ const Shop = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
         </div>
-        <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-20">
           <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm animate-fade-in-up">
             Official Merch
           </div>
