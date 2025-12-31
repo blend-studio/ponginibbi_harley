@@ -30,20 +30,27 @@ const Team = () => {
   return (
     <div className="bg-hd-dark min-h-screen pt-20">
       {/* Hero */}
-      <div className="relative h-[40vh] flex items-center justify-center overflow-hidden">
+      <div className="relative min-h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden bg-black mb-12 md:mb-20">
         <div className="absolute inset-0">
           <img 
             src="https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150229753.jpg?t=st=1767091952~exp=1767095552~hmac=8c4903869ad282d99558ed1d1d9baeacb89ab5bc8ad59cdde76e1cb93170e051&w=1060" 
             alt="Team Ponginibbi" 
-            className="w-full h-full object-cover opacity-50"
+            className="w-full h-full object-cover opacity-40 grayscale hover:scale-105 transition-transform duration-[10s]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
         </div>
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-condensed font-bold text-white mb-2 uppercase">
-            Il Nostro Team
+        <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
+          <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm animate-fade-in-up">
+            Our Crew
+          </div>
+          <h1 className="text-6xl md:text-[10rem] font-condensed font-bold text-white uppercase italic leading-[0.85] mb-6 drop-shadow-2xl animate-fade-in-up delay-100">
+            Meet the <span className="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">Family</span>
           </h1>
-          <p className="text-xl text-gray-400">Passione, Esperienza, Dedizione.</p>
+          <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200">
+            Passione, esperienza e dedizione. Siamo motociclisti come te, 
+            pronti ad aiutarti a vivere il sogno.
+          </p>
         </div>
       </div>
 

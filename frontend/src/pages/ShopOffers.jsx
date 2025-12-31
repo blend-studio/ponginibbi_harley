@@ -53,7 +53,7 @@ const ShopOffers = () => {
         <AnimatedPage>
             <div className="bg-hd-dark min-h-screen pb-20">
                 {/* Hero Banner for Offers */}
-                <div className="relative min-h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-black clip-diagonal mb-12 md:mb-20">
+                <div className="relative min-h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-black mb-12 md:mb-20">
                     <div className="absolute inset-0">
                         <img 
                             src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1600&q=80" 

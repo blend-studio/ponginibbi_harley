@@ -20,25 +20,30 @@ const WinterStorage = () => {
   return (
     <AnimatedPage>
       <div className="bg-hd-dark min-h-screen">
-         {/* Hero */}
-         <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-            <div className="absolute inset-0">
-                <img 
-                    src="https://img.freepik.com/free-photo/biking-motorcycle-forest_114579-5198.jpg?t=st=1767091041~exp=1767094641~hmac=eb78590e36e9afcf912609ca73db90bf1d5797444838d34653c3727d46844717&w=1060" 
-                    alt="Winter Storage" 
-                    className="w-full h-full object-cover opacity-50"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
-            </div>
-            <div className="relative z-10 text-center px-4 pt-20">
-                <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-6 uppercase tracking-tight">
-                    Winter <span className="text-hd-orange">Storage</span>
-                </h1>
-                <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                    Mentre tu riposi, noi ci prendiamo cura della tua Harley.
-                </p>
-            </div>
+      {/* Hero */}
+      <div className="relative min-h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-black mb-12 md:mb-20">
+        <div className="absolute inset-0">
+          <img 
+            src="https://img.freepik.com/free-photo/biking-motorcycle-forest_114579-5198.jpg?t=st=1767091041~exp=1767094641~hmac=eb78590e36e9afcf912609ca73db90bf1d5797444838d34653c3727d46844717&w=1060" 
+            alt="Winter Storage" 
+            className="w-full h-full object-cover opacity-40 grayscale hover:scale-105 transition-transform duration-[10s]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
         </div>
+        <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
+          <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm animate-fade-in-up">
+            Winter Care
+          </div>
+          <h1 className="text-6xl md:text-[10rem] font-condensed font-bold text-white uppercase italic leading-[0.85] mb-6 drop-shadow-2xl animate-fade-in-up delay-100">
+            Winter <span className="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">Storage</span>
+          </h1>
+          <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200">
+            Il sonno invernale perfetto per la tua Harley. 
+            Ambiente climatizzato, manutenzione batteria e check-up completo.
+          </p>
+        </div>
+      </div>
 
         <div className="max-w-7xl mx-auto px-4 py-20">
           

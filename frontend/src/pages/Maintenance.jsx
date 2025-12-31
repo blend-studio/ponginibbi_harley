@@ -17,20 +17,24 @@ const Maintenance = () => {
     <AnimatedPage>
       <div className="bg-hd-dark min-h-screen">
         {/* Hero */}
-        <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="relative min-h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-black mb-12 md:mb-20">
             <div className="absolute inset-0">
                 <img 
                     src="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060" 
                     alt="Service Workshop" 
-                    className="w-full h-full object-cover opacity-50"
+                    className="w-full h-full object-cover opacity-40 grayscale hover:scale-105 transition-transform duration-[10s]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
             </div>
-            <div className="relative z-10 text-center px-4 max-w-4xl pt-20">
-                <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-6 uppercase tracking-tight">
-                    Authorized <span className="text-hd-orange">Service</span>
+            <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
+                <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm animate-fade-in-up">
+                    Master Technicians
+                </div>
+                <h1 className="text-6xl md:text-[10rem] font-condensed font-bold text-white uppercase italic leading-[0.85] mb-6 drop-shadow-2xl animate-fade-in-up delay-100">
+                    Authorized <span className="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">Service</span>
                 </h1>
-                <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200">
                     La tua Harley merita il meglio. Tecnici certificati, strumenti ufficiali e ricambi originali.
                 </p>
             </div>

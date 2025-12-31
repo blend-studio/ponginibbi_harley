@@ -22,23 +22,28 @@ const CourseCard = ({ title, subtitle, description, link, image }) => (
 const LearnToRide = () => {
   return (
     <div className="bg-hd-dark min-h-screen">
-      {/* Hero */}
-      <div className="relative h-[70vh] flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0">
-                    <img 
-                        src="https://img.freepik.com/free-photo/full-shot-man-riding-motorbike_23-2150810243.jpg?t=st=1767091891~exp=1767095491~hmac=0a9bfb927248e154cdeffc95977f8aaf69824382204d02e00abd84b80ad87cb9&w=1060" 
-                        alt="Learn to Ride" 
-                        className="w-full h-full object-cover opacity-60"
-                    />
-          <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
+      {/* Hero Section */}
+      <div className="relative min-h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-black mb-12 md:mb-20">
+        <div className="absolute inset-0">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-man-riding-motorbike_23-2150810243.jpg?t=st=1767091891~exp=1767095491~hmac=0a9bfb927248e154cdeffc95977f8aaf69824382204d02e00abd84b80ad87cb9&w=1060" 
+            alt="Learn to Ride" 
+            className="w-full h-full object-cover opacity-40 grayscale hover:scale-105 transition-transform duration-[10s]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
         </div>
+        
         <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
-          <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-6 uppercase tracking-tight">
-            Inizia il <span className="text-hd-orange">Viaggio</span>
+          <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm animate-fade-in-up">
+            Riding Academy
+          </div>
+          <h1 className="text-6xl md:text-[10rem] font-condensed font-bold text-white uppercase italic leading-[0.85] mb-6 drop-shadow-2xl animate-fade-in-up delay-100">
+            Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">Journey</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white font-light mb-8 max-w-3xl mx-auto">
-            La strada è il posto migliore per imparare chi sei. 
-            I nostri corsi certificati ti daranno le competenze per dominarla.
+          <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200">
+            Dalla prima volta in sella alle tecniche avanzate. 
+            Impara dai migliori per dominare la strada con sicurezza e stile.
           </p>
         </div>
       </div>

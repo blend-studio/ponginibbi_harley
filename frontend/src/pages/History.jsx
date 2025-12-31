@@ -21,21 +21,28 @@ const HistoryEvent = ({ year, title, description, image, align = 'left' }) => (
 const History = () => {
   return (
     <div className="bg-hd-dark min-h-screen">
-       {/* Hero */}
-       <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      {/* Hero */}
+      <div className="relative min-h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-black mb-12 md:mb-20">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1558980394-0a06c46e60e7?q=80&w=2670&auto=format&fit=crop" 
-            alt="History" 
-            className="w-full h-full object-cover opacity-40 grayscale"
+            alt="Harley History" 
+            className="w-full h-full object-cover opacity-40 grayscale hover:scale-105 transition-transform duration-[10s]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
         </div>
-        <div className="relative z-10 text-center px-4 pt-20">
-          <h1 className="text-5xl md:text-9xl font-condensed font-bold text-white mb-2 uppercase tracking-tighter">
-            Legacy
+        <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
+          <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm animate-fade-in-up">
+            Since 1965
+          </div>
+          <h1 className="text-6xl md:text-[10rem] font-condensed font-bold text-white uppercase italic leading-[0.85] mb-6 drop-shadow-2xl animate-fade-in-up delay-100">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">Legacy</span>
           </h1>
-          <p className="text-xl text-hd-orange uppercase tracking-[0.5em] font-bold">Since 19XX</p>
+          <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200">
+            Oltre mezzo secolo di passione, motori e libertà. 
+            Scopri la storia della famiglia Ponginibbi e il suo legame indissolubile con il mito americano.
+          </p>
         </div>
       </div>
 

@@ -29,22 +29,25 @@ const ExpressLane = () => {
     <AnimatedPage>
       <div className="bg-hd-dark min-h-screen">
         {/* Hero Section */}
-        <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="relative min-h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-black mb-12 md:mb-20">
             <div className="absolute inset-0">
                 <img 
-                    src="https://images.pexels.com/photos/5195493/pexels-photo-5195493.jpeg" 
+                    src="https://img.freepik.com/free-photo/mechanic-checking-motorcycle_114579-4475.jpg?t=st=1767096000~exp=1767099600~hmac=123456" 
                     alt="Express Lane" 
-                    className="w-full h-full object-cover opacity-60"
+                    className="w-full h-full object-cover opacity-40 grayscale hover:scale-105 transition-transform duration-[10s]"
                     onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1600&q=80'; }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
             </div>
-            <div className="relative z-10 text-center px-4 max-w-4xl pt-20">
-                <span className="block text-hd-orange font-bold tracking-widest uppercase mb-2 animate-fade-in-up">Servizio Rapido</span>
-                <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-6 uppercase tracking-tight animate-fade-in-up delay-100">
-                    Express <span className="text-hd-orange">Lane™</span>
+            <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
+                <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm animate-fade-in-up">
+                    Servizio Rapido
+                </div>
+                <h1 className="text-6xl md:text-[10rem] font-condensed font-bold text-white uppercase italic leading-[0.85] mb-6 drop-shadow-2xl animate-fade-in-up delay-100">
+                    Express <span class="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">Lane™</span>
                 </h1>
-                <p className="text-xl text-gray-300 max-w-2xl mx-auto animate-fade-in-up delay-200">
+                <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200">
                     Nessun appuntamento necessario. Entra, rilassati e riparti in meno di un'ora.
                 </p>
             </div>

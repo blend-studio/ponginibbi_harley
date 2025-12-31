@@ -26,21 +26,25 @@ const Customization = () => {
     <AnimatedPage>
       <div className="bg-hd-dark min-h-screen">
          {/* Hero */}
-         <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+         <div className="relative min-h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-black mb-12 md:mb-20">
             <div className="absolute inset-0">
                 <img 
                     src="https://img.freepik.com/free-photo/full-shot-man-riding-motorbike_23-2150810243.jpg?t=st=1767091891~exp=1767095491~hmac=0a9bfb927248e154cdeffc95977f8aaf69824382204d02e00abd84b80ad87cb9&w=1060" 
                     alt="Custom Bike" 
-                    className="w-full h-full object-cover opacity-60"
+                    className="w-full h-full object-cover opacity-40 grayscale hover:scale-105 transition-transform duration-[10s]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
             </div>
-            <div className="relative z-10 text-center px-4 pt-20">
-                <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-6 uppercase tracking-tight">
-                    Build Your <span className="text-hd-orange">Dream</span>
+            <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
+                <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm animate-fade-in-up">
+                    Custom Kings
+                </div>
+                <h1 className="text-6xl md:text-[10rem] font-condensed font-bold text-white uppercase italic leading-[0.85] mb-6 drop-shadow-2xl animate-fade-in-up delay-100">
+                    Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">Dream</span>
                 </h1>
-                <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                    La moto di serie è solo l'inizio. Rendila unica, rendila tua.
+                <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200">
+                    La moto di serie è solo l'inizio. Rendila unica, rendila tua. Trasformiamo visioni in metallo e cromo.
                 </p>
             </div>
         </div>

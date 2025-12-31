@@ -29,24 +29,29 @@ const Gallery = () => {
 
   return (
     <div className="bg-hd-dark min-h-screen">
-       <div className="relative h-[40vh] flex items-center justify-center overflow-hidden mb-20">
-            <div className="absolute inset-0">
-                <img 
-                    src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop" 
-                    alt="Gallery Hero" 
-                    className="w-full h-full object-cover opacity-50 grayscale"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-transparent to-transparent"></div>
-            </div>
-            <div className="relative z-10 text-center px-4 pt-20">
-                <h1 className="text-5xl md:text-8xl font-condensed font-bold text-white mb-2 uppercase tracking-tight">
-                    Gallery
-                </h1>
-                <p className="text-xl text-gray-300 uppercase tracking-widest">
-                    Momenti di Libertà
-                </p>
-            </div>
+      {/* Hero Section */}
+      <div className="relative min-h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden bg-black mb-12 md:mb-20">
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2670&auto=format&fit=crop" 
+            alt="Harley Gallery" 
+            className="w-full h-full object-cover opacity-40 grayscale hover:scale-105 transition-transform duration-[10s]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
         </div>
+        <div className="relative z-10 text-center px-4 max-w-5xl pt-20">
+          <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm animate-fade-in-up">
+            Visual Story
+          </div>
+          <h1 className="text-6xl md:text-[10rem] font-condensed font-bold text-white uppercase italic leading-[0.85] mb-6 drop-shadow-2xl animate-fade-in-up delay-100">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">Gallery</span>
+          </h1>
+          <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200">
+            Momenti di strada, eventi indimenticabili e le custom più belle. Guarda il mito attraverso i nostri occhi.
+          </p>
+        </div>
+      </div>
 
         <div className="max-w-7xl mx-auto px-4 pb-20">
              <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
