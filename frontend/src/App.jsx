@@ -25,6 +25,11 @@ import Rentals from './pages/Rentals';
 import RentalsBooking from './pages/RentalsBooking';
 import Finance from './pages/Finance';
 import LearnToRide from './pages/LearnToRide';
+import NewRider from './pages/NewRider';
+import Skilled from './pages/Skilled';
+import Workshop from './pages/Workshop';
+import GarageParty from './pages/GarageParty';
+import Jumpstart from './pages/Jumpstart';
 import TestRide from './pages/TestRide';
 import Quote from './pages/Quote';
 import ServiceAppointment from './pages/ServiceAppointment';
@@ -34,6 +39,7 @@ import History from './pages/History';
 import SimplePage from './pages/SimplePage';
 import Gallery from './pages/Gallery';
 import News from './pages/News';
+import NewsDetail from './pages/NewsDetail';
 import ServiceOffers from './pages/ServiceOffers';
 import ExpressLane from './pages/ExpressLane';
 import ShopCategory from './pages/ShopCategory';
@@ -69,11 +75,11 @@ function App() {
             
             <Route path="/learn-to-ride" element={<AnimatedPage><LearnToRide /></AnimatedPage>} />
             {/* Learn to ride sub-pages could be SimplePage or section anchors */}
-            <Route path="/learn-to-ride/new-rider" element={<SimplePage title="Neofiti" subtitle="CORSO BASE" image="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060"><p>Dettagli corso neofiti...</p></SimplePage>} />
-            <Route path="/learn-to-ride/skilled" element={<SimplePage title="Esperti" subtitle="CORSO AVANZATO" image="https://img.freepik.com/free-photo/biking-motorcycle-forest_114579-5198.jpg?t=st=1767091041~exp=1767094641~hmac=eb78590e36e9afcf912609ca73db90bf1d5797444838d34653c3727d46844717&w=1060"><p>Dettagli corso esperti...</p></SimplePage>} />
-            <Route path="/learn-to-ride/workshop" element={<SimplePage title="Workshop" subtitle="TECNICA" image="https://img.freepik.com/free-psd/white-hard-hat-safety-equipment-construction-work-protection_191095-80944.jpg?t=st=1767091891~exp=1767095491~hmac=6657fc156aca7c6e18010418a21f3b6b7aa62ca0f6a6ec4964166ea27f1523a4&w=1060"><p>Dettagli workshop...</p></SimplePage>} />
-            <Route path="/learn-to-ride/garage-party" element={<SimplePage title="Garage Party" subtitle="EVENTI" image="https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150229753.jpg?t=st=1767091952~exp=1767095552~hmac=8c4903869ad282d99558ed1d1d9baeacb89ab5bc8ad59cdde76e1cb93170e051&w=1060"><p>Dettagli garage party...</p></SimplePage>} />
-            <Route path="/learn-to-ride/jumpstart" element={<SimplePage title="Jumpstart" subtitle="EXPERIENCE" image="https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150229753.jpg?t=st=1767091952~exp=1767095552~hmac=8c4903869ad282d99558ed1d1d9baeacb89ab5bc8ad59cdde76e1cb93170e051&w=1060"><p>Dettagli jumpstart...</p></SimplePage>} />
+            <Route path="/learn-to-ride/new-rider" element={<AnimatedPage><NewRider /></AnimatedPage>} />
+            <Route path="/learn-to-ride/skilled" element={<AnimatedPage><Skilled /></AnimatedPage>} />
+            <Route path="/learn-to-ride/workshop" element={<AnimatedPage><Workshop /></AnimatedPage>} />
+            <Route path="/learn-to-ride/garage-party" element={<AnimatedPage><GarageParty /></AnimatedPage>} />
+            <Route path="/learn-to-ride/jumpstart" element={<AnimatedPage><Jumpstart /></AnimatedPage>} />
 
             {/* Service Routes */}
             <Route path="/services" element={<AnimatedPage><Services /></AnimatedPage>} />
@@ -103,6 +109,7 @@ function App() {
             <Route path="/events" element={<AnimatedPage><Events /></AnimatedPage>} />
             <Route path="/gallery" element={<AnimatedPage><Gallery /></AnimatedPage>} />
             <Route path="/news" element={<AnimatedPage><News /></AnimatedPage>} />
+            <Route path="/news/:id" element={<AnimatedPage><NewsDetail /></AnimatedPage>} />
             <Route path="/touring" element={<SimplePage title="Mondo Touring" subtitle="VIAGGI" image="https://img.freepik.com/free-photo/full-shot-man-riding-motorbike_23-2150810243.jpg?t=st=1767091891~exp=1767095491~hmac=0a9bfb927248e154cdeffc95977f8aaf69824382204d02e00abd84b80ad87cb9&w=1060"><p>Scopri il piacere di viaggiare senza confini.</p></SimplePage>} />
 
             {/* Info Routes */}

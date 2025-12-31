@@ -105,3 +105,62 @@ body {
     @apply border-2 border-white/30 text-white font-condensed font-bold uppercase tracking-wider px-8 py-3 transition-all duration-300 hover:border-hd-orange hover:text-hd-orange;
   }
 }
+
+/* --- iPad specific adjustments (landscape & portrait around 768px-1024px) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Clamp very large hero headings to a comfortable size on iPad */
+  h1 {
+    font-size: clamp(2.5rem, 5.5vw, 4.5rem) !important;
+    line-height: 1 !important;
+    letter-spacing: 0.01em;
+  }
+
+  /* Reduce excessive top paddings used for desktop hero spacing */
+  [class*="pt-"] {
+    padding-top: 1rem !important;
+  }
+
+  /* Reduce large min-height hero panels to avoid vertical clipping */
+  [class*="min-h-"] {
+    min-height: 48vh !important;
+    height: auto !important;
+  }
+
+  /* Make multi-column grids more readable on iPad: prefer 2 columns where many pages use 3-4 */
+  .max-w-7xl .grid,
+  .max-w-5xl .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+  }
+
+  /* Slightly reduce large images and ensure focal point is centered */
+  img.object-cover {
+    object-position: center center !important;
+  }
+
+  /* Reduce huge spaced badges / labels */
+  .inline-block.bg-hd-orange {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    font-size: 0.68rem !important;
+  }
+
+  /* Ensure section titles wrap nicely */
+  .text-6xl, .text-7xl, .text-8xl {
+    font-size: 2.5rem !important;
+  }
+
+  /* Improve card aspect ratios on tablet */
+  .aspect-video {
+    aspect-ratio: 16 / 9 !important;
+  }
+}
+
+/* Specifico: riduci il titolo hero su iPad in verticale (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .maintenance-hero-title {
+    font-size: 2.5rem !important;
+    line-height: 1 !important;
+    letter-spacing: 0.01em;
+  }
+}

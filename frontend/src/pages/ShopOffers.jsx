@@ -11,18 +11,18 @@ const OfferCard = ({ product }) => {
     const discountedPrice = (originalPrice * 0.8).toFixed(2).replace('.', ',');
 
     return (
-        <div className="group flex flex-col h-full bg-white/5 border border-white/10 hover:border-hd-orange transition-all duration-300">
+        <div className="relative group flex flex-col h-full bg-white/5 border border-white/10 hover:border-hd-orange transition-all duration-300">
             <div className="relative overflow-hidden aspect-[4/5] bg-white/5">
                 <div className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold uppercase px-2 py-1 z-10 animate-pulse">
                     -20% SALE
                 </div>
-                <img 
-                    src={product.image} 
-                    alt={product.name} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                     <Link to="/contact" className="bg-white text-black px-6 py-3 font-bold uppercase text-sm hover:bg-hd-orange hover:text-white transition-colors">
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-150 ease-out flex items-center justify-center z-20 pointer-events-none group-hover:pointer-events-auto">
+                     <Link to="/contact" className="bg-white text-black px-6 py-3 font-bold uppercase text-sm hover:bg-hd-orange hover:text-white transition-all duration-150 ease-out opacity-0 group-hover:opacity-100 transform translate-y-1 group-hover:translate-y-0 z-30">
                         Richiedi Info
                     </Link>
                 </div>

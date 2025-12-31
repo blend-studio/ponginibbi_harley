@@ -61,25 +61,30 @@ const ServiceOffers = () => {
   return (
     <AnimatedPage>
       <div className="bg-hd-dark min-h-screen">
-         {/* Hero */}
-         <div className="relative h-[50vh] flex items-center justify-center overflow-hidden mb-16 md:mb-20">
-            <div className="absolute inset-0">
-                <img 
-                    src="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060" 
-                    alt="Service Offers" 
-                    className="w-full h-full object-cover opacity-60"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-hd-dark via-hd-dark/20 to-transparent"></div>
-            </div>
-            <div className="relative z-10 text-center px-4 pt-20">
-                <h1 className="text-4xl md:text-8xl font-condensed font-bold text-white mb-4 uppercase tracking-tight leading-none">
-                    Service <span className="text-hd-orange">Specials</span>
-                </h1>
-                <p className="text-lg md:text-xl text-gray-300 uppercase tracking-widest max-w-2xl mx-auto">
-                    Prenditi cura della tua Harley con le nostre offerte esclusive.
-                </p>
-            </div>
-        </div>
+                 {/* Hero */}
+                <div className="relative h-[40vh] sm:h-[50vh] md:h-[70vh] flex items-center justify-center overflow-hidden mb-10 md:mb-20">
+                    <div className="absolute inset-0">
+                        <img
+                            src="https://img.freepik.com/free-photo/red-motor-biking-road_114579-5071.jpg?t=st=1767091891~exp=1767095491~hmac=6130f968067151f6841975acc6f729a59cd3724a974920c36b6e5d384fa1460b&w=1060"
+                            alt="Service Offers"
+                            className="w-full h-full object-cover opacity-60"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
+                    </div>
+                    <div className="relative z-10 text-center px-4 pt-8 md:pt-20 max-w-5xl">
+                         <h1 className="text-3xl sm:text-4xl md:text-7xl font-condensed font-bold text-white mb-4 uppercase italic leading-[0.9] drop-shadow-2xl">
+                            SPECIAL OFFERS <span className="text-transparent bg-clip-text bg-gradient-to-r from-hd-orange to-red-600">SERVICE</span>
+                        </h1>
+                        <div className="inline-block bg-hd-orange text-white font-bold uppercase tracking-[0.3em] px-6 py-2 mb-6 text-xs md:text-sm">
+                            SERVICE
+                        </div>
+                       
+                        <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                            Prenditi cura della tua Harley con le nostre offerte esclusive.
+                        </p>
+                    </div>
+                </div>
 
         <div className="max-w-7xl mx-auto px-4 pb-20 md:pb-24">
              <SectionTitle title="Offerte Attive" subtitle="LIMITED TIME" />
