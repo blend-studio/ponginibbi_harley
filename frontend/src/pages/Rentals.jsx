@@ -153,8 +153,8 @@ const Rentals = () => {
                 <Link to="/rentals/booking" className="bg-black text-white px-10 py-4 font-bold font-condensed uppercase hover:bg-white hover:text-black transition-all clip-slant text-sm md:text-base">
                     Verifica Disponibilità
                 </Link>
-                <Link to="/inventory" className="border-2 border-white text-white px-10 py-4 font-bold font-condensed uppercase hover:bg-white hover:text-black transition-all clip-slant text-sm md:text-base">
-                    Vedi Moto
+                <Link to="/inventory" className="bg-white text-black px-10 py-4 font-bold font-condensed uppercase hover:bg-hd-orange hover:text-white transition-all clip-slant text-sm md:text-base">
+                  Vedi Moto
                 </Link>
             </div>
         </div>

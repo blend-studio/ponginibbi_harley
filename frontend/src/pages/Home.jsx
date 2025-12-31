@@ -70,28 +70,46 @@ const Home = () => {
                 </h2>
             </ScrollReveal>
             
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[600px]">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-2 h-auto md:h-[600px]">
                 {/* Cruiser - Grande */}
                 <div className="md:col-span-8 bg-gray-200 relative group overflow-hidden cursor-pointer clip-corner h-[400px] md:h-full">
                     <ScrollReveal delay={0.1} width="100%" height="100%">
-                        <img src="https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2024/2024-breakout-117/2024-breakout-117-f21/360/2024-breakout-117-f21-motorcycle-08.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 saturate-0 group-hover:saturate-100" />
+                        <img
+                            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80"
+                            alt="Cruiser motorcycle"
+                            loading="lazy"
+                            onError={(e) => { e.currentTarget.src = '/images/harley/harley-davidson-1.png'; }}
+                            className="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105 saturate-0 group-hover:saturate-100"
+                        />
                         <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
                         <h3 className="absolute bottom-8 left-8 text-6xl md:text-8xl font-condensed font-bold text-white uppercase italic drop-shadow-lg z-10">Cruiser</h3>
                     </ScrollReveal>
                 </div>
                 
                 {/* Touring & Sport */}
-                <div className="md:col-span-4 flex flex-col gap-4 h-[400px] md:h-full">
+                <div className="md:col-span-4 flex flex-col gap-2 h-[400px] md:h-full">
                     <div className="flex-1 bg-gray-800 relative group overflow-hidden cursor-pointer clip-corner">
                          <ScrollReveal delay={0.2} width="100%" height="100%" direction="left">
-                             <img src="https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2024/2024-road-glide/2024-road-glide-f57/360/2024-road-glide-f57-motorcycle-08.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                             <img
+                                 src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1400&q=80"
+                                 alt="Touring motorcycle"
+                                 loading="lazy"
+                                 onError={(e) => { e.currentTarget.src = '/images/harley/harley-davidson-1.png'; }}
+                                 className="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105"
+                             />
                              <div className="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors"></div>
                              <h3 className="absolute bottom-4 left-4 text-4xl font-condensed font-bold text-white uppercase italic drop-shadow-md">Touring</h3>
                          </ScrollReveal>
                     </div>
                     <div className="flex-1 bg-hd-orange relative group overflow-hidden cursor-pointer clip-corner">
                          <ScrollReveal delay={0.3} width="100%" height="100%" direction="left">
-                             <img src="https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2024/2024-sportster-s/2024-sportster-s-f85/360/2024-sportster-s-f85-motorcycle-08.jpg" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 mix-blend-multiply filter contrast-125" />
+                             <img
+                                 src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=80"
+                                 alt="Sport motorcycle"
+                                 loading="lazy"
+                                 onError={(e) => { e.currentTarget.src = '/images/harley/harley-davidson-1.png'; }}
+                                 className="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105 mix-blend-multiply filter contrast-125"
+                             />
                              <h3 className="absolute bottom-4 left-4 text-4xl font-condensed font-bold text-white uppercase italic drop-shadow-md">Sport</h3>
                          </ScrollReveal>
                     </div>
