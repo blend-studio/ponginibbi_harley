@@ -33,6 +33,7 @@ import SimplePage from './pages/SimplePage';
 import Gallery from './pages/Gallery';
 import News from './pages/News';
 import ServiceOffers from './pages/ServiceOffers';
+import ExpressLane from './pages/ExpressLane';
 
 function App() {
   const location = useLocation();
@@ -74,7 +75,7 @@ function App() {
             <Route path="/service-appointment" element={<AnimatedPage><ServiceAppointment /></AnimatedPage>} />
             <Route path="/services/promos" element={<SimplePage title="Promozioni" subtitle="SERVICE" image="https://img.freepik.com/free-psd/white-hard-hat-safety-equipment-construction-work-protection_191095-80944.jpg?t=st=1767091891~exp=1767095491~hmac=6657fc156aca7c6e18010418a21f3b6b7aa62ca0f6a6ec4964166ea27f1523a4&w=1060"><p>Promozioni attive...</p></SimplePage>} />
             <Route path="/parts-request" element={<AnimatedPage><PartsRequest /></AnimatedPage>} />
-            <Route path="/services/express-lane" element={<SimplePage title="Express Lane" subtitle="SERVIZIO RAPIDO" image="https://img.freepik.com/free-psd/white-hard-hat-safety-equipment-construction-work-protection_191095-80944.jpg?t=st=1767091891~exp=1767095491~hmac=6657fc156aca7c6e18010418a21f3b6b7aa62ca0f6a6ec4964166ea27f1523a4&w=1060"><p>Servizio rapido senza appuntamento per interventi brevi (cambio olio, gomme, pastiglie freni).</p></SimplePage>} />
+            <Route path="/services/express-lane" element={<AnimatedPage><ExpressLane /></AnimatedPage>} />
             <Route path="/winter-storage" element={<AnimatedPage><WinterStorage /></AnimatedPage>} />
 
             {/* Shop Routes */}
